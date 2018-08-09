@@ -1,23 +1,35 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-const ProjectDetail = (props) => {
-  console.log(props);
+import getPost from '../actions';
+
+class ProjectDetail extends Component {
+  render() {
+    const { id } = this.props.match.params;
+
+    const post = getPost(id);
+    console.log(post);
+
+    const projectData = this.props.project.projects.find(e => e.id === id);
+
+    console.log(projectData);
+
+    return (
+      <section className="portfolio__project-detail">
+        <p><Link to="/">Back</Link></p>
+        <p>Viewing project "{projectData.title}"</p>
+
+      </section>
+    );
+  }
 }
 
-// class ProjectDetail extends Component {
-//   render() {
-//     const { title } = this.props.match.params;
-//     console.log(this);
-//
-//     return (
-//       <section className="portfolio__project-detail">
-//         <p><Link to="/">Back</Link></p>
-//         <p>Viewing project "{title}"</p>
-//
-//       </section>
-//     );
-//   }
-// }
-//
-export default ProjectDetail;
+const mapStateToProps = (state) => {
+  // console.log(state);
+  return {
+    project: state
+  }
+}
+
+export default connect(mapStateToProps)(ProjectDetail);
