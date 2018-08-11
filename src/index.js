@@ -10,11 +10,13 @@ import registerServiceWorker from './registerServiceWorker';
 
 import reducers from './reducers';
 
-import Header from './components/header';
+import Header from './containers/header';
 import ProjectsList from './containers/projects__list';
 import ProjectDetail from './containers/project__detail';
 
 const store = createStore(reducers);
+
+console.log(this.state);
 
 ReactDOM.render(
   <Provider store={store}>

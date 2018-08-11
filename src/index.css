@@ -7,12 +7,16 @@ body {
 .portfolio__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 5em 1fr 1fr;
     grid-column-gap: 3em;
 }
 
-section.header {
+section.portfolio__header {
   grid-column: 1 / 4;
+}
+
+section.portfolio__header > * {
+    display: inline-block;
 }
 
 section.portfolio__project-detail {
@@ -24,4 +28,8 @@ aside.portfolio__projects {
     grid-column: 1;
     grid-row: 2 / 4;
     background: gray;
+}
+
+.portfolio__project-detail__banner {
+  display: block;
 }
