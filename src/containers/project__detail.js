@@ -16,8 +16,7 @@ class ProjectDetail extends Component {
     console.log(projectData);
 
     return (
-      <section className="portfolio__project-detail">
-        <p><Link to="/">Back</Link></p>
+      <section className="portfolio__project-detail">        
         <p>Viewing project "{projectData.title}"</p>
 
       </section>

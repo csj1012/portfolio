@@ -16,9 +16,11 @@ class ProjectsList extends Component {
 
   render() {
     return (
-      <ul className="portfolio__projects__list">
-        {this.renderList()}
-      </ul>
+      <aside className="portfolio__projects">
+        <ul className="portfolio__projects__list">
+          {this.renderList()}
+        </ul>
+      </aside>
     );
   }
 }

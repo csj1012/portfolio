@@ -3,3 +3,25 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.portfolio__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 3em;
+}
+
+section.header {
+  grid-column: 1 / 4;
+}
+
+section.portfolio__project-detail {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+}
+
+aside.portfolio__projects {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    background: gray;
+}
