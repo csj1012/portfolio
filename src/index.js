@@ -10,6 +10,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 import reducers from './reducers';
 
+import Header from './components/header';
 import ProjectsList from './containers/projects__list';
 import ProjectDetail from './containers/project__detail';
 
@@ -18,7 +19,8 @@ const store = createStore(reducers);
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <div>
+      <div className="portfolio__wrapper">
+        <Header />
         <Route path="/project/:id" component={ProjectDetail} />
         <Route path="/" component={ProjectsList} />
       </div>
