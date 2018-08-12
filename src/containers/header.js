@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-class Header extends Component {
+export default class Header extends Component {
   render() {
     return (
       <section className="portfolio__header">
@@ -11,12 +11,3 @@ class Header extends Component {
     );
   };
 }
-
-const mapStateToProps = (state) => {
-  // console.log(state);
-  return {
-    project: state
-  }
-}
-
-export default connect(mapStateToProps)(Header);

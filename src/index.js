@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
-import { BrowserRouter, Route } from 'react-router-dom';
 
 import './index.css';
 
@@ -16,17 +15,13 @@ import ProjectDetail from './containers/project__detail';
 
 const store = createStore(reducers);
 
-console.log(this.state);
-
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
-      <div className="portfolio__wrapper">
-        <Header />
-        <Route path="/project/:id" component={ProjectDetail} />
-        <Route path="/" component={ProjectsList} />
-      </div>
-    </BrowserRouter>
+    <div className="portfolio__wrapper">
+      <Header />
+      <ProjectDetail />
+      <ProjectsList />
+    </div>
   </Provider>
   , document.getElementById('root'));
 registerServiceWorker();
