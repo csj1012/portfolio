@@ -1,22 +1,8 @@
-// import ProjectsReducer from '../reducers/reducer_projects';
+export const SELECT_PROJECT = 'select_project';
 
-
-export const GET_PROJECT = 'get_project';
-
-
-export default function getPost(id) {
-  // Go to the reducer and get the right data from the object.
-  console.log(id);
-  // console.log(ProjectsReducer);
-
-  // const project = ProjectsReducer.find(e => e.id === id);
-
-  // console.log(project);
-
-
-  // Return a type and a payload (latter containing the data we fetched).
+export function selectProject(project) {
   return {
-    type: GET_PROJECT,
-    payload: id
+    type: SELECT_PROJECT,
+    payload: project
   }
 }
