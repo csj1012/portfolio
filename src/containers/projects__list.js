@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { selectProject } from '../actions';
+import { bindActionCreators } from 'redux';
 
 class ProjectsList extends Component {
   renderList() {
     return this.props.projects.map((project) => {
       return (
-        <li className="portfolio__projects__list__project" key={project.title}>
+        <li onClick={() => this.props.selectProject(project)}
+            className="portfolio__projects__list__project"
+            key={project.title}>
           <span>{project.title}</span>
         </li>
       );
@@ -29,4 +33,8 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(ProjectsList);
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ selectProject: selectProject }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProjectsList);
