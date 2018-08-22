@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import ProjectsTeaserList from './project__teaser-list';
 
 export class ProjectDetail extends Component {
   renderProjectImage() {
@@ -32,7 +33,9 @@ export class ProjectDetail extends Component {
 
   render() {
     if (!this.props.selected) {
-      return <section className="portfolio__project-detail">No project selected :(</section>;
+      return (
+        <ProjectsTeaserList />
+      );
     }
       return (
         <section className="portfolio__project-detail">
