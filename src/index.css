@@ -26,6 +26,30 @@ section.portfolio__header > * {
     display: inline-block;
 }
 
+.portfolio__projects--teaser {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.portfolio__projects__list--teaser__project img {
+    max-width: 100%;
+}
+
+.portfolio__projects__list--teaser {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .portfolio__projects__list--teaser {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 3em;
+  }
+}
+
 section.portfolio__project-detail {
     grid-column: 2 / 4;
     grid-row: 2 / 4;
