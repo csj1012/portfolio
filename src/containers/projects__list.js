@@ -4,7 +4,7 @@ import { selectProject } from '../actions';
 import { bindActionCreators } from 'redux';
 
 class ProjectsList extends Component {
-  renderList() {    
+  renderList() {
     return this.props.projects.map((project) => {
       return (
         <li onClick={() => this.props.selectProject(project)}
@@ -20,6 +20,7 @@ class ProjectsList extends Component {
     return (
       <aside className="portfolio__projects">
         <ul className="portfolio__projects__list">
+          <lh>Featured Projects</lh>
           {this.renderList()}
         </ul>
       </aside>

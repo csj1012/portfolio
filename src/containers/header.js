@@ -15,7 +15,7 @@ export class Header extends Component {
   render() {
     return (
       <section className="portfolio__header">
-        <h1>Chelsie Johnston</h1>
+        <h1><a href="/">Chelsie Johnston</a></h1>
         {this.renderTitle()}
       </section>
     );
