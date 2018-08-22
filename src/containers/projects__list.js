@@ -4,7 +4,7 @@ import { selectProject } from '../actions';
 import { bindActionCreators } from 'redux';
 
 class ProjectsList extends Component {
-  renderList() {
+  renderList() {    
     return this.props.projects.map((project) => {
       return (
         <li onClick={() => this.props.selectProject(project)}
