@@ -1,13 +1,31 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-export default class Header extends Component {
+export class Header extends Component {
+  renderTitle() {
+    if (!this.props.selected) {
+      return <div></div>;
+    }
+
+    return (
+      <h2> > {this.props.selected.title}</h2>
+    );
+  }
+
   render() {
     return (
       <section className="portfolio__header">
         <h1>Chelsie Johnston</h1>
-      > <h2>Project Title</h2>
+        {this.renderTitle()}
       </section>
     );
   };
 }
+
+function mapStateToProps(state) {
+  return {
+    selected: state.selected
+  };
+}
+
+export default connect(mapStateToProps)(Header);
