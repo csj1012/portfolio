@@ -5,10 +5,17 @@ body {
 }
 
 .portfolio__wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+@media screen and (min-width: 600px) {
+.portfolio__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 5em 1fr 1fr;
     grid-column-gap: 3em;
+  }
 }
 
 section.portfolio__header {
@@ -22,6 +29,7 @@ section.portfolio__header > * {
 section.portfolio__project-detail {
     grid-column: 2 / 4;
     grid-row: 2 / 4;
+    order: 1;
 }
 
 aside.portfolio__projects {

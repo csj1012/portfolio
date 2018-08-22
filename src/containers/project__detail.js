@@ -2,14 +2,52 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 export class ProjectDetail extends Component {
+  renderProjectImage() {
+    if (!this.props.selected.image) {
+      return <span>Visit this thing</span>;
+    }
+
+    return (
+      <div>
+      <img src={this.props.selected.image.src} alt={this.props.selected.image.alt} />
+      <span>
+        {this.props.selected.image.caption}
+        <em>{this.props.selected.title}</em> >
+      </span>
+      </div>
+    );
+  }
+
+  renderProjectLinks() {
+    return this.props.selected.links.map((link) => {
+      return (
+        <li key={link.text}>
+          <a href={link.href}>
+            {link.text}
+          </a>
+        </li>
+      );
+    });
+  }
+
   render() {
     if (!this.props.selected) {
-      return <div>No project selected :(</div>;
-    }  
+      return <section className="portfolio__project-detail">No project selected :(</section>;
+    }
       return (
-        <div>
-          {this.props.selected.title}
-        </div>
+        <section className="portfolio__project-detail">
+          <a href="#">
+            {this.renderProjectImage()}
+          </a>
+
+            <p>{this.props.selected.description}</p>
+
+            {this.props.selected.links &&
+              <ul>
+                {this.renderProjectLinks()}
+              </ul>
+            }
+        </section>
       );
 
   }
