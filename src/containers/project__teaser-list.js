@@ -11,6 +11,7 @@ class ProjectsTeaserList extends Component {
         <li onClick={() => this.props.selectProject(project)}
             className="portfolio__projects__list--teaser__project"
             key={project.title}>
+            {project.image && <img src={project.image.src} />}
           <span>{project.title}</span>
         </li>
       );
@@ -19,12 +20,11 @@ class ProjectsTeaserList extends Component {
 
   render() {
     return (
-      <aside className="portfolio__projects--teaser">
+      <section className="portfolio__projects--teaser">
         <ul className="portfolio__projects__list--teaser">
-          <lh>Featured Projects</lh>
           {this.renderList()}
         </ul>
-      </aside>
+      </section>
     )
   }
 }
