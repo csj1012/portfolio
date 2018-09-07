@@ -19,6 +19,15 @@ export class ProjectDetail extends Component {
     );
   }
 
+  renderProjectTechList() {
+    return this.props.selected.techs.map((tech) => {
+      return (
+        <li key={tech}>{tech}</li>
+      )
+    }
+  )
+  }
+
   renderProjectLinks() {
     return this.props.selected.links.map((link) => {
       return (
@@ -42,6 +51,14 @@ export class ProjectDetail extends Component {
           <a href="#">
             {this.renderProjectImage()}
           </a>
+
+          <p>
+            {this.props.selected.techs &&
+              <ul>
+                {this.renderProjectTechList()}
+              </ul>
+            }
+          </p>
 
             <p>{this.props.selected.description}</p>
 
