@@ -16,11 +16,20 @@ class ProjectsList extends Component {
     });
   }
 
+
+
+
   render() {
+    var classNames = require('classnames');
+
+    var listClass = classNames({
+      'is-expanded': this.props.selected,
+    });
+
     return (
-      <aside className="portfolio__projects">
+      <aside className={"portfolio__projects" + " " + listClass}>
         <ul className="portfolio__projects__list">
-          <lh>Featured Projects</lh>
+          <lh>Projects</lh>
           {this.renderList()}
         </ul>
       </aside>
@@ -30,7 +39,8 @@ class ProjectsList extends Component {
 
 function mapStateToProps(state) {
   return {
-    projects: state.projects
+    projects: state.projects,
+    selected: state.selected
   };
 }
 

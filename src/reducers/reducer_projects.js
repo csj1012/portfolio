@@ -1,12 +1,16 @@
 export default function() {
   return [
     {
-      title: 'Project One',
+      title: 'AMA Topic Pages',
       image: {
-        src: 'https://loremflickr.com/640/360',
+        src: 'colors1.png',
         alt: 'Image alt.',
         caption: 'Test caption one.'
       },
+      techs: [
+        'drupal',
+        'bloopal'
+      ],
       description: 'Glorpy glorp glorp, I\'m a description.',
       links: [
         {
@@ -24,15 +28,48 @@ export default function() {
       ]
     },
     {
-      title: 'Project Two',
+      title: 'AMA Style Guides',
+      image: {
+        src: 'colors1.png',
+        alt: 'Image alt.',
+        caption: 'Test caption one.'
+      },
       caption: 'Test caption two.'
     },
     {
-      title: 'Project Three',
+      title: 'UChicago News',
+      image: {
+        src: 'colors1.png',
+        alt: 'Image alt.',
+        caption: 'Test caption one.'
+      },
       caption: 'Test caption three.'
     },
     {
-      title: 'Project Four',
+      title: 'UChicago MAPPSS',
+      image: {
+        src: 'colors1.png',
+        alt: 'Image alt.',
+        caption: 'Test caption one.'
+      },
+      caption: 'Test caption four.'
+    },
+    {
+      title: 'UChicago Sites',
+      image: {
+        src: 'colors1.png',
+        alt: 'Image alt.',
+        caption: 'Test caption one.'
+      },
+      caption: 'Test caption four.'
+    },
+    {
+      title: 'Horizon RPG',
+      image: {
+        src: 'colors1.png',
+        alt: 'Image alt.',
+        caption: 'Test caption one.'
+      },
       caption: 'Test caption four.'
     },
   ]
