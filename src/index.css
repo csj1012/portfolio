@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Dorsa');
+
 body {
   margin: 0;
   padding: 0;
@@ -13,13 +15,27 @@ body {
 .portfolio__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 5em 1fr;
+    grid-template-rows: 12em 1fr;
     grid-column-gap: 3em;
   }
 }
 
+h1 a {
+  font-family: 'Dorsa', sans-serif;
+  font-size: 3em;
+  letter-spacing: 8px;
+  text-decoration: none;
+  color: #a9a4a4;
+}
+
+h1 a:hover {
+  color: #776d60;
+}
+
 section.portfolio__header {
-  grid-column: 1 / 4;
+  grid-column: 1 / 5;
+  padding: 0 3em;
+  background: #f9f7f6;
 }
 
 section.portfolio__header > * {
@@ -29,6 +45,7 @@ section.portfolio__header > * {
 .portfolio__projects--teaser {
   grid-column-start: 1;
   grid-column-end: 5;
+  margin: 0 3em;
 }
 
 .portfolio__projects__list--teaser__project img {
