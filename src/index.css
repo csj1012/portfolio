@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Dorsa');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  background: #f9f7f6;
 }
 
 .portfolio__wrapper {
@@ -35,7 +37,6 @@ h1 a:hover {
 section.portfolio__header {
   grid-column: 1 / 5;
   padding: 0 3em;
-  background: #f9f7f6;
 }
 
 section.portfolio__header > * {
@@ -48,10 +49,16 @@ section.portfolio__header > * {
   margin: 0 3em;
 }
 
+.portfolio__projects__list--teaser__project {
+  background: white;
+  padding: 1em;
+}
+
 .portfolio__projects__list--teaser__project img {
     max-width: 100%;
     min-width: 100%;
     height: 260px;
+    clip-path: inset(10px 20px 30px 40px);
 }
 
 
@@ -67,7 +74,78 @@ section.portfolio__header > * {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 3em;
+    grid-row-gap: 3em;
   }
+}
+
+.projects__list--teaser__project__title {
+    line-height: 0;
+}
+
+.projects__list--teaser__project__techs {
+  list-style-type: none;
+}
+
+.projects__list--teaser__project__techs li {
+  display: inline-block;
+}
+
+.projects__list--teaser__project__techs li:after {
+  content: ", ";
+}
+
+.projects__list--teaser__project__techs li:last-child:after {
+  content: "";
+}
+
+span.projects__list--teaser__project__organization {
+    color: #777777;
+    font-size: .75em;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 1px;
+}
+
+.projects__list--teaser__project__title {
+    display: inline-block;
+}
+
+.projects__list--teaser__project__description {
+  display: inline;
+}
+
+.projects__list--teaser__project__description:before {
+    content: " - ";
+}
+
+.projects__list--teaser__project__techs {
+  color: #777777;
+  font-size: .75em;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.projects__list--teaser__project__techs {
+    color: #777777;
+    margin: 0;
+    font-size: .75em;
+    display: block;
+    padding: 0;
+}
+
+span.project__palette {
+    display: block;
+    background: gray;
+    height: 7px;
+    width: 230px;
+    margin: 0 auto;
+}
+
+span.project__palette > span:first-child {
+    background: black;
+    width: 25%;
+    display: block;
+    height: 100%;
 }
 
 section.portfolio__project-detail {
