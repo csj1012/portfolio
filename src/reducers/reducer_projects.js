@@ -53,7 +53,7 @@ export default function() {
       caption: 'Test caption two.'
     },
     {
-      organization: 'University of Chicago',
+      organization: 'The University of Chicago',
       shortDescription: 'D6 to D7 migration project encompassing a total website redesign and major content reorganization',
       title: 'UChicago News',
       image: {
@@ -61,10 +61,11 @@ export default function() {
         alt: 'Image alt.',
         caption: 'Test caption one.'
       },
-      caption: 'Test caption three.'
+      caption: 'Test caption three.',
+      credits: 'University of Chicago Web Services (link)',
     },
     {
-      organization: 'University of Chicago',
+      organization: 'The University of Chicago',
       title: 'UChicago MAPPSS',
       shortDescription: 'Customizable and themable Drupal boilerplate site for the UChicago MAPPSS program',
       image: {
@@ -72,10 +73,11 @@ export default function() {
         alt: 'Image alt.',
         caption: 'Test caption one.'
       },
-      caption: 'Test caption four.'
+      caption: 'Test caption four.',
+      credits: 'University of Chicago Web Services (link)',
     },
     {
-      organization: 'University of Chicago',
+      organization: 'The University of Chicago',
       title: 'UChicago Sites',
       shortDescription: 'Multisite Drupal suite used to house websites for over 400 University organizations',
       image: {
@@ -83,7 +85,8 @@ export default function() {
         alt: 'Image alt.',
         caption: 'Test caption one.'
       },
-      caption: 'Test caption four.'
+      caption: 'Test caption four.',
+      credits: 'University of Chicago Web Services (link)',
     },
     {
       title: 'Horizon RPG',
