@@ -15,16 +15,14 @@ class ProjectsTeaserList extends Component {
         <li onClick={() => this.props.selectProject(project)}
             className="portfolio__projects__list--teaser__project"
             key={project.title}>
-            {project.image && <img src={project.image.src} />}
+            {project.image && <img src={project.image.src} className="projects__list--teaser__project__image"/>}
           <div className="projects__list--teaser__project__text">
-            <span className="projects__list--teaser__project__organization">{project.organization}</span>
-            <h2 className="projects__list--teaser__project__title">{project.title}</h2>
-            <span className="projects__list--teaser__project__description">{project.shortDescription}</span>
-            <ul className="projects__list--teaser__project__techs">
-              {project.techs && project.techs.map(function(name, index){
-                    return <li key={ index }>{name}</li>;
-                  })}
-            </ul>
+            <span className="projects__list--teaser__project__text-container">
+              <p className="projects__list--teaser__project__organization">{project.organization}</p>
+              <h2 className="projects__list--teaser__project__title">{project.title}</h2>
+              <p className="projects__list--teaser__project__description">{project.shortDescription}</p>
+            </span>
+            <p className="projects__list--teaser__project__role">Project role: {project.role}</p>
             <span className="project__palette">
               <span></span>
               <span></span>
