@@ -5,7 +5,7 @@ export default function() {
       title: 'Topic Pages',
       shortDescription: 'Drupal 8 minisites to act as a hub for the AMA to promote specialized content using AMA Style Guide elements',
       image: {
-        src: 'topicpage.png',
+        src: 'ama-topics.png',
         alt: 'Image alt.',
         caption: 'Test caption one.'
       },
@@ -15,7 +15,8 @@ export default function() {
         'Twig',
         'SCSS',
         'Gulp',
-        'PHP'
+        'PHP',
+        'HTML'
       ],
       role: 'Drupal development, front end development',
       description: 'Glorpy glorp glorp, I\'m a description.',
@@ -46,7 +47,7 @@ export default function() {
         'Atomic design'
       ],
       image: {
-        src: 'colors1.png',
+        src: 'ama-styleguides.png',
         alt: 'Image alt.',
         caption: 'Test caption one.'
       },
@@ -54,13 +55,34 @@ export default function() {
     },
     {
       organization: 'The University of Chicago',
+      department: 'Web Services',
       shortDescription: 'D6 to D7 migration project encompassing a total website redesign and major content reorganization',
       title: 'UChicago News',
       image: {
-        src: 'colors1.png',
+        src: 'uc-news.png',
         alt: 'Image alt.',
         caption: 'Test caption one.'
       },
+      techs: [
+        'Drupal',
+        'HTML',
+        'CSS/SCSS',
+        'PHP',
+        'Javascript/JQuery'
+      ],
+      role: 'Design, front end development',
+      description: 'Glorpy glorp glorp, I\'m a description.',
+      view: 'https://web.archive.org/web/20160603004748/https://news.uchicago.edu/',
+      links: [
+        {
+          href: 'https://web.archive.org/web/20160603004748/https://news.uchicago.edu/',
+          text: 'View this project on the Internet Archive'
+        },
+        {
+          href: 'https://www.drupal.org/case-study/uchicago-news',
+          text: 'Drupal.org case study about this project'
+        }
+      ],
       caption: 'Test caption three.',
       credits: 'University of Chicago Web Services (link)',
     },
