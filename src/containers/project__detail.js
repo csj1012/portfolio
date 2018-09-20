@@ -48,7 +48,7 @@ export class ProjectDetail extends Component {
     }
       return (
         <section className="portfolio__project-detail">
-          <a href="#">
+          <a href={this.props.selected.view}>
             {this.renderProjectImage()}
           </a>
 
