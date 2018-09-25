@@ -88,10 +88,11 @@ export default function() {
     },
     {
       organization: 'The University of Chicago',
-      title: 'UChicago MAPPSS',
-      shortDescription: 'Customizable and themable Drupal boilerplate site for the UChicago MAPPSS program',
+      title: 'UChicago MAPSS',
+      shortDescription: 'Customizable and themable Drupal boilerplate site for the UChicago Master of Arts Program in the Social Sciences',
+      view: 'https://mapss.uchicago.edu/',
       image: {
-        src: 'colors1.png',
+        src: 'uc-mapss.png',
         alt: 'Image alt.',
         caption: 'Test caption one.'
       },
@@ -103,20 +104,22 @@ export default function() {
       title: 'UChicago Sites',
       shortDescription: 'Multisite Drupal suite used to house websites for over 400 University organizations',
       image: {
-        src: 'colors1.png',
+        src: 'uc-sites.png',
         alt: 'Image alt.',
         caption: 'Test caption one.'
       },
+      view: 'https://sites.uchicago.edu',
       caption: 'Test caption four.',
       credits: 'University of Chicago Web Services (link)',
     },
     {
       title: 'Horizon RPG',
       image: {
-        src: 'colors1.png',
+        src: 'horizon.png',
         alt: 'Image alt.',
         caption: 'Test caption one.'
       },
+      view: 'http://horizon.taiyae.com',
       shortDescription: 'Homebrew role-playing game built using ExpressionEngine, custom PHP modules, and lots of love',
       caption: 'Test caption four.'
     },
