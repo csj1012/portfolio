@@ -43,7 +43,10 @@ export class ProjectDetail extends Component {
   render() {
     if (!this.props.selected) {
       return (
-        <ProjectsTeaserList />
+        <div>
+          <h3>My Work</h3>
+          <ProjectsTeaserList />
+        </div>
       );
     }
       return (
