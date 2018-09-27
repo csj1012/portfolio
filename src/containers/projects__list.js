@@ -16,10 +16,11 @@ class ProjectsList extends Component {
     });
   }
 
-
-
-
   render() {
+    if (this.props.section != "work") {
+      return <div></div>;
+    }
+    
     var classNames = require('classnames');
 
     var listClass = classNames({
