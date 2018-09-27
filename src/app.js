@@ -25,16 +25,16 @@ export default class App extends Component {
 
   render() {
     const section = this.state.section;
+    const classes = 'portfolio__wrapper' + ' portfolio__wrapper--section-' + section;
 
     return (
-      <div className="portfolio__wrapper">
-        {this.state.section}
+      <div className={classes}>
         <Header />
         <Intro section={section} />
         <About section={section} />
         <Nav onNavClick={this.handleClick} />
         <ProjectDetail section={section}/>
-        <ProjectsList />
+        <ProjectsList section={section} />
       </div>
     );
   };

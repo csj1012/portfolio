@@ -8,7 +8,7 @@ export class ProjectDetail extends Component {
      section: e
    }));
   }
-  
+
   renderProjectImage() {
     if (!this.props.selected.image) {
       return <span>Visit this thing</span>;
@@ -53,7 +53,7 @@ export class ProjectDetail extends Component {
 
     if (!this.props.selected) {
       return (
-        <div>
+        <div className="portfolio__projects--teaser--wrapper">
           <h3>My Work</h3>
           <ProjectsTeaserList onNavClick={this.handleClick} />
         </div>
