@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import Header from './containers/header';
 import Intro from './containers/intro';
+import About from './containers/about';
 import Nav from './containers/nav.js';
 import ProjectsList from './containers/projects__list';
 import ProjectDetail from './containers/project__detail';
@@ -19,7 +20,7 @@ export default class App extends Component {
   handleClick(e) {
    this.setState(state => ({
      section: e
-   }));   
+   }));
   }
 
   render() {
@@ -29,9 +30,10 @@ export default class App extends Component {
       <div className="portfolio__wrapper">
         {this.state.section}
         <Header />
-        <Intro />
+        <Intro section={section} />
+        <About section={section} />
         <Nav onNavClick={this.handleClick} />
-        <ProjectDetail />
+        <ProjectDetail section={section}/>
         <ProjectsList />
       </div>
     );

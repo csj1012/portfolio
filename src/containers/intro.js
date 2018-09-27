@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-export class Intro extends Component {
+export default class Intro extends Component {
   render() {
-    return (
-      <section className="portfolio__intro">
-        <div className="portfolio__photo">Photo</div>
-        <p className="portfolio__blurb">I'm a web designer and developer. I have lots of experience in Drupal. I created my first website when I was ten years old. I love my cat and I just learned how to knit. I'm pretty depressed. Please use my photo to discriminate against me. Let's get in touch!</p>
-      </section>
-    );
+    if (this.props.section == 'work' || this.props.section == 'about') {
+      return (
+        <section className="portfolio__intro">
+          <div className="portfolio__photo">Photo</div>
+          <p className="portfolio__blurb">I'm a web designer and developer. I have lots of experience in Drupal. I created my first website when I was ten years old. I love my cat and I just learned how to knit. I'm pretty depressed. Please use my photo to discriminate against me. Let's get in touch!</p>
+        </section>
+      );
+    } else {
+      return (
+        <div></div>
+      );
+    }
   };
 }
-
-function mapStateToProps(state) {
-  return {
-    selected: state.selected
-  };
-}
-
-export default connect(mapStateToProps)(Intro);

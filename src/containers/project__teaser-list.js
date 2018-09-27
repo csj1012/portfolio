@@ -6,6 +6,15 @@ import ImagePalette from 'react-image-palette';
 import { bindActionCreators } from 'redux';
 
 class ProjectsTeaserList extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+  
+  handleClick(e) {
+    this.props.onNavClick('detail');
+  }
+
   renderList() {
     return this.props.projects.map((project) => {
 
