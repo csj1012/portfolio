@@ -16,10 +16,10 @@ export default class App extends Component {
    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() {
+  handleClick(e) {
    this.setState(state => ({
-     section: 'work'
-   }));
+     section: e
+   }));   
   }
 
   render() {
@@ -37,11 +37,3 @@ export default class App extends Component {
     );
   };
 }
-
-// function mapStateToProps(state) {
-//   return {
-//     selected: state.selected
-//   };
-// }
-//
-// export default connect(mapStateToProps)(Nav);
