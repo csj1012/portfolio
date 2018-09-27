@@ -3,6 +3,12 @@ import { connect } from 'react-redux';
 import ProjectsTeaserList from './project__teaser-list';
 
 export class ProjectDetail extends Component {
+  handleClick(e) {
+   this.setState(state => ({
+     section: e
+   }));
+  }
+  
   renderProjectImage() {
     if (!this.props.selected.image) {
       return <span>Visit this thing</span>;
@@ -41,11 +47,15 @@ export class ProjectDetail extends Component {
   }
 
   render() {
+    if (this.props.section != "work") {
+      return <div></div>;
+    }
+
     if (!this.props.selected) {
       return (
         <div>
           <h3>My Work</h3>
-          <ProjectsTeaserList />
+          <ProjectsTeaserList onNavClick={this.handleClick} />
         </div>
       );
     }

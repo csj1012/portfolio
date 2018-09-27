@@ -8,7 +8,6 @@ export class Nav extends Component {
   }
 
   handleClick(e) {
-    // 'test' will eventually hold the thing that is clicked
     this.props.onNavClick(e.target.dataset.section);
   }
 
