@@ -27,7 +27,13 @@ body {
 /*************************** ABOUT */
 
 section.portfolio__about {
-    grid-row: 4;
+    grid-row: 5;
+}
+
+/*************************** CONTACT */
+
+section.portfolio__contact {
+    grid-row: 5;
 }
 
 /*************************** INTRO */
@@ -47,7 +53,7 @@ section.portfolio__intro {
   grid-row: 2;
 }
 
-.portfolio__projects + section.portfolio__intro {
+.portfolio__project-detail + section.portfolio__intro {
   grid-row: 4;
 }
 

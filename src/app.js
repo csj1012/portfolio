@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Header from './containers/header';
 import Intro from './containers/intro';
 import About from './containers/about';
+import Contact from './containers/contact';
 import Nav from './containers/nav.js';
 import ProjectsList from './containers/projects__list';
 import ProjectDetail from './containers/project__detail';
@@ -31,9 +32,10 @@ export default class App extends Component {
       <div className={classes}>
         <Header />
         <About section={section} />
+        <Contact section={section} />
         <Nav onNavClick={this.handleClick} />
-        <ProjectDetail section={section}/>
         <ProjectsList section={section} />
+        <ProjectDetail section={section}/>
         <Intro section={section} />
       </div>
     );

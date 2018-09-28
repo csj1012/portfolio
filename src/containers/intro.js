@@ -3,7 +3,9 @@ import { connect } from 'react-redux';
 
 export default class Intro extends Component {
   render() {
-    if (this.props.section == 'work' || this.props.section == 'about') {
+    if (this.props.section == 'work'
+    || this.props.section == 'about'
+    || this.props.section == 'contact') {
       return (
         <section className="portfolio__intro">
           <div className="portfolio__photo">Photo</div>
