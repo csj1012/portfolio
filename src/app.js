@@ -30,11 +30,11 @@ export default class App extends Component {
     return (
       <div className={classes}>
         <Header />
-        <Intro section={section} />
         <About section={section} />
         <Nav onNavClick={this.handleClick} />
         <ProjectDetail section={section}/>
         <ProjectsList section={section} />
+        <Intro section={section} />
       </div>
     );
   };

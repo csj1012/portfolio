@@ -14,6 +14,14 @@ body {
   margin: 0 6em;
 }
 
+.portfolio__projects + section.portfolio__intro {
+    grid-row: 4;
+}
+
+section.portfolio__about {
+    grid-row: 4;
+}
+
 @media screen and (min-width: 600px) {
 .portfolio__wrapper {
     display: grid;
