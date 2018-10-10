@@ -54,18 +54,20 @@ export class ProjectDetail extends Component {
     if (!this.props.selected) {
       return (
         <div className="portfolio__projects--teaser--wrapper">
-          <h3>My Work</h3>
+          <h3>Projects</h3>
           <ProjectsTeaserList onNavClick={this.handleClick} />
         </div>
       );
     }
       return (
         <section className="portfolio__project-detail">
-          <a href={this.props.selected.view}>
+          <h3>{this.props.selected.title}</h3>
+          <p className="portfolio__project-detail__blurb">{this.props.selected.shortDescription}</p>
+          <a className="portfolio__project-detail__image-wrapper" href={this.props.selected.view}>
             {this.renderProjectImage()}
           </a>
 
-          <p>
+          <p className="portfolio__project-detail__techs">Techs, languages, and libraries: 
             {this.props.selected.techs &&
               <ul>
                 {this.renderProjectTechList()}

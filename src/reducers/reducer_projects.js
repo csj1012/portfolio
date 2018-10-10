@@ -2,15 +2,19 @@ export default function() {
   return [
     {
       organization: 'American Medical Association',
-      title: 'Topic Pages',
+      title: 'AMA Topic Pages',
       shortDescription: 'Drupal 8 minisites to act as a hub for the AMA to promote specialized content using AMA Style Guide elements',
       image: {
         src: 'ama-topics.png',
         alt: 'Image alt.',
-        caption: 'Test caption one.'
+        caption: 'An editor-curated Topic Page.'
+      },
+      teaser: {
+        src: 'teaser-ama-topics.png',
+        alt: 'Image alt.'
       },
       techs: [
-        'Drupal',
+        'Drupal 8',
         'PatternLab',
         'Twig',
         'SCSS',
@@ -37,7 +41,7 @@ export default function() {
     },
     {
       organization: 'American Medical Association',
-      title: 'Style Guides',
+      title: 'AMA Living Style Guides',
       shortDescription: 'PatternLab suite showcasing reusable atomic design elements to be used throughout the AMA’s digital products, including a custom Drupal 8 theme',
       techs: [
         'PatternLab',
@@ -46,10 +50,15 @@ export default function() {
         'Gulp',
         'Atomic design'
       ],
+      role: 'Project Lead (v1), Front end development, design systems thinking',
       image: {
         src: 'ama-styleguides.png',
         alt: 'Image alt.',
         caption: 'Test caption one.'
+      },
+      teaser: {
+        src: 'teaser-ama-styleguide.png',
+        alt: 'Image alt.'
       },
       caption: 'Test caption two.'
     },
@@ -70,7 +79,7 @@ export default function() {
         'PHP',
         'Javascript/JQuery'
       ],
-      role: 'Design, front end development',
+      role: 'Design Lead, design, front end development',
       description: 'Glorpy glorp glorp, I\'m a description.',
       view: 'https://web.archive.org/web/20160603004748/https://news.uchicago.edu/',
       links: [

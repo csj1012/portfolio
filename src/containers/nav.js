@@ -17,7 +17,7 @@ render() {
     return (
       <p className="portfolio__links">
         <ul>
-          <li data-section="work" onClick={this.handleClick}>My Work</li>
+          <li data-section="work" onClick={this.handleClick}>Projects</li>
           <li data-section="about" onClick={this.handleClick}>About Me</li>
           <li data-section="contact" onClick={this.handleClick}>Contact</li>
         </ul>
