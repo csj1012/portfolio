@@ -10,7 +10,7 @@ class ProjectsTeaserList extends Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
   }
-  
+
   handleClick(e) {
     this.props.onNavClick('detail');
   }
@@ -18,27 +18,26 @@ class ProjectsTeaserList extends Component {
   renderList() {
     return this.props.projects.map((project) => {
 
-
-
       return (
         <li onClick={() => this.props.selectProject(project)}
             className="portfolio__projects__list--teaser__project"
             key={project.title}>
-            {project.image && <img src={project.image.src} className="projects__list--teaser__project__image"/>}
+            <h2 className="projects__list--teaser__project__title">{project.title}</h2>
+            <p className="projects__list--teaser__project__organization">{project.organization}</p>
+          <div className="portfolio__projects__list--teaser__project__image-wrapper">
+            {project.teaser && <img src={project.teaser.src} className="projects__list--teaser__project__image"/>}
+          </div>
           <div className="projects__list--teaser__project__text">
             <span className="projects__list--teaser__project__text-container">
-              <p className="projects__list--teaser__project__organization">{project.organization}</p>
-              <h2 className="projects__list--teaser__project__title">{project.title}</h2>
-              <p className="projects__list--teaser__project__description">{project.shortDescription}</p>
+              <p className="projects__list--teaser__project__description">{project.shortDescription} (Project role: {project.role})</p>
             </span>
-            <p className="projects__list--teaser__project__role">Project role: {project.role}</p>
-            <span className="project__palette">
+            {/* <span className="project__palette">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-            </span>
+            </span> */}
           </div>
 
           {/* {project.image.src}
