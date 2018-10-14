@@ -23,19 +23,18 @@ export default function() {
         'HTML'
       ],
       role: 'Drupal development, front end development',
-      description: 'Glorpy glorp glorp, I\'m a description.',
       links: [
         {
-          href: 'http://www.google.com',
-          text: 'Google.'
+          href: 'https://www.ama-assn.org/topic/advocating-patients-and-physicians',
+          text: 'View live site example'
         },
         {
-          href: 'http://www.google.com',
-          text: 'Google 2'
+          href: 'https://www.drupal.org/case-study/american-medical-association-topics-pages',
+          text: 'View Drupal.org case study by Avi Schwab'
         },
         {
-          href: 'http://www.google.com',
-          text: 'Google 3'
+          href: 'https://www.midcamp.org/topic/american-medical-association-topic-landing-pages-d8-case-study',
+          text: 'Watch the Midcamp 2018 talk about this project'
         }
       ]
     },
@@ -72,6 +71,10 @@ export default function() {
         alt: 'Image alt.',
         caption: 'Test caption one.'
       },
+      teaser: {
+        src: 'teaser-uc-news.png',
+        alt: 'The UChicago News home page.'
+      },
       techs: [
         'Drupal',
         'HTML',
@@ -107,6 +110,10 @@ export default function() {
       },
       caption: 'Test caption four.',
       credits: 'University of Chicago Web Services (link)',
+      teaser: {
+        src: 'teaser-uc-mapss.png',
+        alt: 'Screenshot of the MAPSS home page.'
+      },
     },
     {
       organization: 'The University of Chicago',

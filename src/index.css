@@ -6,6 +6,12 @@ body {
   font-family: 'Lato', sans-serif;
   background-image: linear-gradient(180deg, #FFFFFF, #edecef);
   background-attachment: fixed;
+  font-size: 18px;
+}
+
+a {
+    color: #5f4fbb;
+    text-decoration: none;
 }
 
 /*************************** WRAPPER */
@@ -263,8 +269,22 @@ section.portfolio__project-detail {
 }
 
 .portfolio__project-detail__image-wrapper {
-  max-width: 60%;
   display: block;
+}
+
+.portfolio__project-detail__image-wrapper div {
+  position: relative;
+}
+
+.portfolio__project-detail__image__caption {
+    position: absolute;
+    bottom: 0;
+    background: black;
+    color: white;
+    left: 0;
+    padding: 4px 8px;
+    letter-spacing: .25px;
+    font-size: .8em;
 }
 
 .portfolio__project-detail img {

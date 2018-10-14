@@ -16,11 +16,11 @@ export class ProjectDetail extends Component {
 
     return (
       <div>
-      <img src={this.props.selected.image.src} alt={this.props.selected.image.alt} />
-      <span>
-        {this.props.selected.image.caption}
-        <em>{this.props.selected.title}</em> >
-      </span>
+        <img src={this.props.selected.image.src} alt={this.props.selected.image.alt} />
+        <span className="portfolio__project-detail__image__caption">
+          {this.props.selected.image.caption}
+          <em>({this.props.selected.organization})</em>
+        </span>
       </div>
     );
   }
@@ -63,11 +63,7 @@ export class ProjectDetail extends Component {
         <section className="portfolio__project-detail">
           <h3>{this.props.selected.title}</h3>
           <p className="portfolio__project-detail__blurb">{this.props.selected.shortDescription}</p>
-          <a className="portfolio__project-detail__image-wrapper" href={this.props.selected.view}>
-            {this.renderProjectImage()}
-          </a>
-
-          <p className="portfolio__project-detail__techs">Techs, languages, and libraries: 
+          <p className="portfolio__project-detail__techs">
             {this.props.selected.techs &&
               <ul>
                 {this.renderProjectTechList()}
@@ -75,13 +71,18 @@ export class ProjectDetail extends Component {
             }
           </p>
 
+          {this.props.selected.links &&
+            <ul>
+              {this.renderProjectLinks()}
+            </ul>
+          }
+
+          <a className="portfolio__project-detail__image-wrapper" href={this.props.selected.view}>
+            {this.renderProjectImage()}
+          </a>
+
             <p>{this.props.selected.description}</p>
 
-            {this.props.selected.links &&
-              <ul>
-                {this.renderProjectLinks()}
-              </ul>
-            }
         </section>
       );
 
