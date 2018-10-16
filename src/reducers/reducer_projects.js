@@ -9,6 +9,7 @@ export default function() {
         alt: 'Image alt.',
         caption: 'An editor-curated Topic Page.'
       },
+      year: '2018',
       teaser: {
         src: 'teaser-ama-topics.png',
         alt: 'Image alt.'
@@ -49,6 +50,7 @@ export default function() {
         'Gulp',
         'Atomic design'
       ],
+      year: '2018',
       role: 'Project Lead (v1), Front end development, design systems thinking',
       image: {
         src: 'ama-styleguides.png',
@@ -65,6 +67,7 @@ export default function() {
       organization: 'American Medical Association',
       title: 'AMA Corporate Site',
       shortDescription: 'Drupal 7',
+      year: '2017',
       techs: [
         'Drupal 7',
         'PHP',
@@ -88,6 +91,7 @@ export default function() {
       department: 'Web Services',
       shortDescription: 'D6 to D7 migration project encompassing a total website redesign and major content reorganization',
       title: 'UChicago News',
+      year: '2016',
       image: {
         src: 'uc-news.png',
         alt: 'Image alt.',
@@ -104,6 +108,7 @@ export default function() {
         'PHP',
         'Javascript/JQuery'
       ],
+
       role: 'Design Lead, design, front end development',
       view: 'https://web.archive.org/web/20160603004748/https://news.uchicago.edu/',
       links: [
@@ -122,6 +127,7 @@ export default function() {
     {
       organization: 'The University of Chicago',
       title: 'UChicago MAPSS',
+      year: '2016',
       shortDescription: 'Customizable and themable Drupal boilerplate site for the UChicago Master of Arts Program in the Social Sciences',
       view: 'https://mapss.uchicago.edu/',
       image: {
@@ -138,6 +144,7 @@ export default function() {
     },
     {
       title: 'Research Computing Center',
+      year: '2016',
       image: {
         src: 'horizon.png',
         alt: 'Image alt.',
@@ -149,6 +156,7 @@ export default function() {
       organization: 'The University of Chicago'
     },
     {
+      year: '2015',
       title: 'UChicago IT Services',
       image: {
         src: 'horizon.png',
@@ -160,6 +168,7 @@ export default function() {
       organization: 'The University of Chicago'
     },
     {
+      year: '2015',
       organization: 'The University of Chicago',
       title: 'UChicago Sites',
       shortDescription: 'Multisite Drupal suite used to house websites for over 400 University organizations',
@@ -173,6 +182,19 @@ export default function() {
       credits: 'University of Chicago Web Services (link)',
     },
     {
+      year: '2016',
+      title: 'Belleayre Music Festival',
+      image: {
+        src: 'horizon.png',
+        alt: 'Image alt.',
+        caption: 'Test caption one.'
+      },
+      view: 'http://horizon.taiyae.com',
+      shortDescription: '...',
+      caption: 'Test caption four.'
+    },
+    {
+      year: '2013',
       title: 'Horizon RPG',
       image: {
         src: 'horizon.png',

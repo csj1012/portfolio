@@ -23,7 +23,7 @@ class ProjectsTeaserList extends Component {
             className="portfolio__projects__list--teaser__project"
             key={project.title}>
             <h2 className="projects__list--teaser__project__title">{project.title}</h2>
-            <p className="projects__list--teaser__project__organization">{project.organization}</p>
+            <p className="projects__list--teaser__project__organization">{project.organization} ({project.year})</p>
           <div className="portfolio__projects__list--teaser__project__image-wrapper">
             {project.teaser && <img src={project.teaser.src} className="projects__list--teaser__project__image"/>}
           </div>
