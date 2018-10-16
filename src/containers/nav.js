@@ -19,7 +19,7 @@ render() {
         <ul>
           <li data-section="work" onClick={this.handleClick}>Projects</li>
           <li data-section="about" onClick={this.handleClick}>About Me</li>
-          <li data-section="contact" onClick={this.handleClick}>Contact</li>
+          <li data-section="contact" onClick={this.handleClick}>Résumé & Contact</li>
         </ul>
       </p>
     );

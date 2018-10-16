@@ -62,6 +62,28 @@ export default function() {
       caption: 'Test caption two.'
     },
     {
+      organization: 'American Medical Association',
+      title: 'AMA Corporate Site',
+      shortDescription: 'Drupal 7',
+      techs: [
+        'Drupal 7',
+        'PHP',
+        'CSS/SCSS',
+        'Gulp',
+      ],
+      role: 'Developer',
+      image: {
+        src: 'ama-styleguides.png',
+        alt: 'Image alt.',
+        caption: 'Test caption one.'
+      },
+      teaser: {
+        src: 'teaser-ama-styleguide.png',
+        alt: 'Image alt.'
+      },
+      caption: 'Test caption two.'
+    },
+    {
       organization: 'The University of Chicago',
       department: 'Web Services',
       shortDescription: 'D6 to D7 migration project encompassing a total website redesign and major content reorganization',
@@ -83,7 +105,6 @@ export default function() {
         'Javascript/JQuery'
       ],
       role: 'Design Lead, design, front end development',
-      description: 'Glorpy glorp glorp, I\'m a description.',
       view: 'https://web.archive.org/web/20160603004748/https://news.uchicago.edu/',
       links: [
         {
@@ -114,6 +135,29 @@ export default function() {
         src: 'teaser-uc-mapss.png',
         alt: 'Screenshot of the MAPSS home page.'
       },
+    },
+    {
+      title: 'Research Computing Center',
+      image: {
+        src: 'horizon.png',
+        alt: 'Image alt.',
+        caption: 'Test caption one.'
+      },
+      view: 'https://rcc.uchicago.edu',
+      shortDescription: '...',
+      caption: 'Test caption four.',
+      organization: 'The University of Chicago'
+    },
+    {
+      title: 'UChicago IT Services',
+      image: {
+        src: 'horizon.png',
+        alt: 'Image alt.',
+        caption: 'Test caption one.'
+      },
+      shortDescription: '',
+      caption: 'Test caption four.',
+      organization: 'The University of Chicago'
     },
     {
       organization: 'The University of Chicago',
