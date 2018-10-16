@@ -40,6 +40,8 @@ section.portfolio__about {
 
 section.portfolio__contact {
     grid-row: 5;
+    grid-column: 1 / 5;
+    margin: 0 6em;
 }
 
 /*************************** INTRO */
@@ -186,7 +188,8 @@ h3:after {
 }
 
 .projects__list--teaser__project__organization,
-.projects__list--teaser__project__title {
+.projects__list--teaser__project__title,
+ h4 {
   font-size: .75em;
   text-transform: uppercase;
   display: block;
@@ -196,6 +199,10 @@ h3:after {
   letter-spacing: 1px;
   padding: 5px 0;
   bottom: 0;
+}
+
+h4 {
+  text-align: left;
 }
 
 .projects__list--teaser__project__title {
@@ -357,4 +364,51 @@ aside.portfolio__projects.is-expanded {
   color: #6a60a7;
   transition: color .5s ease;
   cursor: pointer;
+}
+
+/**** RESUME ***/
+
+section.portfolio__resume {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 1em;
+  margin-top: 3em;
+}
+
+section.portfolio__resume p {
+  font-size: .9em;
+}
+
+section.portfolio__resume h5 {
+  font-size: 1em;
+}
+
+.portfolio__resume__top {
+  grid-row: 1;
+  grid-column: 1 / 3;
+}
+
+.portfolio__resume__column-left {
+  grid-column: 1;
+}
+
+.portfolio__resume ul {
+  margin-left: 0;
+  padding: 0 1em;
+  margin-top: 0;
+}
+
+.portfolio__resume__column-right {
+  grid-column: 2;
+}
+
+.portfolio__resume__bottom {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.portfolio__resume span {
+  display: block;
+  font-weight: 600;
 }
