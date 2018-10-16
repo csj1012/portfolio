@@ -16,9 +16,17 @@ export default class Resume extends Component {
             and innovation.</p>
 
             <h4>History</h4>
-            <h5>
-              <span>Web Services, University of Chicago IT Services</span>
-            </h5>
+            <h5>American Medical Association</h5>
+            <p>
+                <span>Software Engineer II, 6/2016 - 7/2018</span>
+              <ul>
+                <li>Design and develop responsive, accessible, and engaging websites for Web Services’ clients</li>
+                <li>Help manage, develop, and support the UChicago Sites template site service</li>
+                <li>Led the effort to rework Web Services’ web design process, minimizing both time and cost</li>
+              </ul>
+            </p>
+
+            <h5>Web Services, University of Chicago IT Services</h5>
             <p>
                 <span>Front-End Developer, 12/2015 - 6/2016</span>
                 <span>Associate Front-End Developer, 5/2013 - 12/2015 — Chicago, IL</span>
@@ -29,11 +37,9 @@ export default class Resume extends Component {
               </ul>
             </p>
 
-            <p>
-              <h5>
-                <span>University of Chicago IT Services, Project Delivery Contractor,</span>
+              <h5>University of Chicago IT Services, Project Delivery Contractor,</h5>
+              <p>
                 <span>TEKsystems 9/2012 - 5/2013 — Chicago, IL</span>
-              </h5>
               <ul>
                 <li>Developed, coordinated, and documented web application releases</li>
                 <li>Designed and implemented a new brand for the department’s SharePoint home page</li>
@@ -41,11 +47,9 @@ export default class Resume extends Component {
               </ul>
             </p>
 
-            <p>
-              <h5>
-                <span>Spurlock Museum, University of Illinois Urbana-Champaign</span>
+            <h5>Spurlock Museum, University of Illinois Urbana-Champaign</h5>
+              <p>
                 <span>IT Assistant, 9/09 - 8/11 — Champaign, IL</span>
-              </h5>
               <ul>
                 <li>Designed, developed, and maintained web page and exhibit kiosks</li>
                 <li>Tested and documented accessibility and compliance to emerging web standards</li>

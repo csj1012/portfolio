@@ -275,6 +275,10 @@ section.portfolio__project-detail {
     order: 1;
 }
 
+section.portfolio__project-detail > * + * {
+    margin-top: 1.6em;
+}
+
 .portfolio__project-detail__image-wrapper {
   display: block;
 }
@@ -378,10 +382,12 @@ section.portfolio__resume {
 
 section.portfolio__resume p {
   font-size: .9em;
+  margin-top: 0;
 }
 
 section.portfolio__resume h5 {
-  font-size: 1em;
+  font-size: .9em;
+  margin: 0;
 }
 
 .portfolio__resume__top {
