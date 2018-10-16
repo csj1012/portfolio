@@ -37,6 +37,7 @@ export default class App extends Component {
         <ProjectsList section={section} />
         <ProjectDetail section={section}/>
         <Intro section={section} />
+        <div className="portfolio__react-badge">Built with <a href="React!">React!</a></div>
       </div>
     );
   };
