@@ -19,7 +19,7 @@ a {
 .portfolio__wrapper {
   display: flex;
   flex-flow: column nowrap;
-  margin: 0 6em;
+  margin: 0 1em;
 }
 
 @media screen and (min-width: 600px) {
@@ -168,7 +168,7 @@ h3:after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 3em;
+    grid-column-gap: 1em;
     grid-row-gap: 3em;
   }
 }
