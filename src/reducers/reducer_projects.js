@@ -7,7 +7,7 @@ export default function() {
       image: {
         src: 'ama-topics.png',
         alt: 'Image alt.',
-        caption: 'An editor-curated Topic Page.'
+        caption: 'A scaleable drag-and-drop interface using Drupal 8’s Layout Builder allows content editors to create unique pages for each topic. The theme needed to maintain the integrity of the design without sacrificing flexibility for editors.'
       },
       year: '2018',
       teaser: {
@@ -52,29 +52,6 @@ export default function() {
       ],
       year: '2018',
       role: 'Project Lead (v1), Front end development, design systems thinking',
-      image: {
-        src: 'ama-styleguides.png',
-        alt: 'Image alt.',
-        caption: 'Test caption one.'
-      },
-      teaser: {
-        src: 'teaser-ama-styleguide.png',
-        alt: 'Image alt.'
-      },
-      caption: 'Test caption two.'
-    },
-    {
-      organization: 'American Medical Association',
-      title: 'AMA Corporate Site',
-      shortDescription: 'Drupal 7',
-      year: '2017',
-      techs: [
-        'Drupal 7',
-        'PHP',
-        'CSS/SCSS',
-        'Gulp',
-      ],
-      role: 'Developer',
       image: {
         src: 'ama-styleguides.png',
         alt: 'Image alt.',
@@ -191,7 +168,8 @@ export default function() {
       },
       view: 'http://horizon.taiyae.com',
       shortDescription: '...',
-      caption: 'Test caption four.'
+      caption: 'Test caption four.',
+      organization: 'Freelance Project'
     },
     {
       year: '2013',
@@ -203,7 +181,8 @@ export default function() {
       },
       view: 'http://horizon.taiyae.com',
       shortDescription: 'Homebrew role-playing game built using ExpressionEngine, custom PHP modules, and lots of love',
-      caption: 'Test caption four.'
+      caption: 'Test caption four.',
+      organization: 'Personal Project'
     },
   ]
 }
