@@ -350,20 +350,6 @@ section.portfolio__project-detail > * + * {
 
 /*************************** PROJECT SIDE NAV */
 
-aside.portfolio__projects {
-  opacity: 0;
-}
-
-aside.portfolio__projects.is-expanded {
-  grid-column: 1;
-  grid-row: 2 / 4;
-  opacity: 1;
-  -webkit-transition: opacity .2s;
-  border: solid 1px #372f65;
-  -o-transition: opacity .2s;
-  transition: opacity .2s;
-}
-
 .portfolio__projects__list {
   list-style-type: none;
   padding: 1em;
