@@ -7,16 +7,16 @@ class ProjectTeaserList extends Component {
     return this.props.projects.map((project) => {
       const path = `/project/${project.id}`;
       return (
-        <li className="portfolio__projects__list--teaser__project" key={project.title}>
+        <li className="portfolio__project-teaser-list__project" key={project.title}>
           <Link to={path}>
-            <h2 className="projects__list--teaser__project__title">{project.title}</h2>
-            <p className="projects__list--teaser__project__organization">{project.organization} ({project.year})</p>
-          <div className="portfolio__projects__list--teaser__project__image-wrapper">
-            {project.teaser && <img src={project.teaser.src} className="projects__list--teaser__project__image"/>}
+            <h2 className="portfolio__project-teaser-list__project__title">{project.title}</h2>
+            <p className="portfolio__project-teaser-list__project__organization">{project.organization} ({project.year})</p>
+          <div className="portfolio__project-teaser-list__project__image-wrapper">
+            {project.teaser && <img src={project.teaser.src} className="portfolio__project-teaser-list__project__image"/>}
           </div>
-          <div className="projects__list--teaser__project__text">
-            <span className="projects__list--teaser__project__text-container">
-              <p className="projects__list--teaser__project__description">{project.shortDescription} (Project role: {project.role})</p>
+          <div className="portfolio__project-teaser-list__project__text">
+            <span className="portfolio__project-teaser-list__project__text-container">
+              <p className="portfolio__project-teaser-list__project__description">{project.shortDescription} (Project role: {project.role})</p>
             </span>
           </div>
           </Link>
@@ -27,8 +27,8 @@ class ProjectTeaserList extends Component {
 
   render() {
     return (
-      <aside className="portfolio__projects--teaser">
-        <ul className="portfolio__projects__list--teaser">
+      <aside className="portfolio__project-teaser-list">
+        <ul>
           {this.renderList()}
         </ul>
       </aside>
