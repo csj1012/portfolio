@@ -1,98 +1,96 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import ProjectsTeaserList from './project__teaser-list';
+import { Link } from 'react-router-dom';
 
-export class ProjectDetail extends Component {
-  handleClick(e) {
-   this.setState(state => ({
-     section: e
-   }));
+import getPost from '../actions';
+
+import ProjectsList from './projects__list';
+
+class ProjectDetail extends Component {
+  renderProjectImage(projectData) {
+  if (!projectData.image) {
+    return <span>Visit this thing</span>;
   }
 
-  renderProjectImage() {
-    if (!this.props.selected.image) {
-      return <span>Visit this thing</span>;
-    }
+  return (
+    <div>
+      <img src={projectData.image.src} alt={projectData.image.alt} />
+      <span className="portfolio__project-detail__image__caption">
+        {projectData.image.caption}
+        <em>({projectData.organization})</em>
+      </span>
+    </div>
+  );
+}
 
+renderProjectTechList(projectData) {
+  return projectData.techs.map((tech) => {
     return (
-      <div>
-        <img src={this.props.selected.image.src} alt={this.props.selected.image.alt} />
-        <span className="portfolio__project-detail__image__caption">
-          {this.props.selected.image.caption}
-          <em>({this.props.selected.organization})</em>
-        </span>
-      </div>
+      <li key={tech}>{tech}</li>
+    )
+  }
+)
+}
+
+renderProjectLinks(projectData) {
+  return projectData.links.map((link) => {
+    return (
+      <li key={link.text}>
+        <a href={link.href}>
+          {link.text}
+        </a>
+      </li>
     );
-  }
-
-  renderProjectTechList() {
-    return this.props.selected.techs.map((tech) => {
-      return (
-        <li key={tech}>{tech}</li>
-      )
-    }
-  )
-  }
-
-  renderProjectLinks() {
-    return this.props.selected.links.map((link) => {
-      return (
-        <li key={link.text}>
-          <a href={link.href}>
-            {link.text}
-          </a>
-        </li>
-      );
-    });
-  }
+  });
+}
 
   render() {
-    if (this.props.section != "work") {
-      return <div></div>;
-    }
+    const { id } = this.props.match.params;
 
-    if (!this.props.selected) {
-      return (
-        <div className="portfolio__projects--teaser--wrapper">
-          <h3>Projects</h3>
-          <ProjectsTeaserList onNavClick={this.handleClick} />
-        </div>
-      );
-    }
-      return (
+    // const post = getPost(id);
+    // console.log(post);
+
+    const projectData = this.props.project.projects.find(e => e.id === id);
+
+    console.log(projectData);
+
+    return (
+      <section className="portfolio__project-detail-wrapper">
+        <ProjectsList />
         <section className="portfolio__project-detail">
-          <h3>{this.props.selected.title}</h3>
-          <p className="portfolio__project-detail__blurb">{this.props.selected.shortDescription}</p>
+          <h3>{projectData.title}</h3>
+          <p className="portfolio__project-detail__blurb">{projectData.shortDescription}</p>
           <p className="portfolio__project-detail__techs">
-            {this.props.selected.techs &&
+            {projectData.techs &&
               <ul>
-                {this.renderProjectTechList()}
+                {this.renderProjectTechList(projectData)}
               </ul>
             }
           </p>
 
-          {this.props.selected.links &&
+          {projectData.links &&
             <ul>
-              {this.renderProjectLinks()}
+              {this.renderProjectLinks(projectData)}
             </ul>
           }
 
-          <a className="portfolio__project-detail__image-wrapper" href={this.props.selected.view}>
-            {this.renderProjectImage()}
+          <a className="portfolio__project-detail__image-wrapper" href={projectData.view}>
+            {this.renderProjectImage(projectData)}
           </a>
 
-            <p>{this.props.selected.description}</p>
+            <p>{projectData.description}</p>
 
         </section>
-      );
-
+      </section>
+    );
   }
 }
 
-function mapStateToProps(state) {
+const mapStateToProps = (state) => {
+  // console.log(state);
   return {
-    selected: state.selected
-  };
+    project: state
+  }
 }
 
 export default connect(mapStateToProps)(ProjectDetail);

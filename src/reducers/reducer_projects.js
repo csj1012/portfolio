@@ -1,6 +1,7 @@
 export default function() {
   return [
     {
+      id: 'american-medical-association-topic-pages',
       organization: 'American Medical Association',
       title: 'AMA Topic Pages',
       shortDescription: 'Drupal 8 minisites to act as a hub for the AMA to promote specialized content using AMA Style Guide elements',
@@ -40,6 +41,7 @@ export default function() {
       ]
     },
     {
+      id: 'american-medical-association-living-style-guides',
       organization: 'American Medical Association',
       title: 'AMA Living Style Guides',
       shortDescription: 'PatternLab suite showcasing reusable atomic design elements to be used throughout the AMA’s digital products, including a custom Drupal 8 theme',

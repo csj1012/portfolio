@@ -2,25 +2,22 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { selectProject } from '../actions';
 import { bindActionCreators } from 'redux';
+import { Link } from 'react-router-dom';
 
 class ProjectsList extends Component {
   renderList() {
     return this.props.projects.map((project) => {
+      const path = `/project/${project.id}`;
       return (
-        <li onClick={() => this.props.selectProject(project)}
-            className="portfolio__projects__list__project"
+        <li className="portfolio__projects__list__project"
             key={project.title}>
-          <span>{project.title}</span>
+          <Link to={path}>{project.title}</Link>
         </li>
       );
     });
   }
 
   render() {
-    if (this.props.section != "work") {
-      return <div></div>;
-    }
-    
     var classNames = require('classnames');
 
     var listClass = classNames({
