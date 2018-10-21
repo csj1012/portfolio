@@ -2,7 +2,6 @@
 export default function(state = null, action) {
   switch (action.type) {
     case 'select_project':
-      console.log(action);
       return action.payload;
   }
 

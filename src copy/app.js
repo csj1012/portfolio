@@ -6,7 +6,7 @@ import Intro from './containers/intro';
 import About from './containers/about';
 import Contact from './containers/contact';
 import Nav from './containers/nav.js';
-import Projects from './containers/projects';
+import Projects from './containers/projects.js';
 
 export default class App extends Component {
   constructor(props) {
@@ -29,16 +29,13 @@ export default class App extends Component {
 
     return (
       <div className={classes}>
-        <h1>Section is {this.state.section}</h1>
-        {/* <Header /> */}
-        {/* <About section={section} /> */}
-        {/* <Contact section={section} /> */}
+        <Header />
+        <About section={section} />
+        <Contact section={section} />
         <Nav onNavClick={this.handleClick} />
-        <Projects section={this.state.section} />
-        {/* <ProjectsList section={section} /> */}
-        {/* <ProjectDetail section={section}/> */}
-        {/* <Intro section={section} /> */}
-        {/* <div className="portfolio__react-badge">Built with <a href="React!">React!</a></div> */}
+        <Projects onClick={this.handleClick} section={section} />
+        <Intro section={section} />
+        <div className="portfolio__react-badge">Built with <a href="React!">React!</a></div>
       </div>
     );
   };

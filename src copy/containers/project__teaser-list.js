@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 import { selectProject } from '../actions';
 import { connect } from 'react-redux';
+import ImagePalette from 'react-image-palette';
 
 import { bindActionCreators } from 'redux';
 
 class ProjectsTeaserList extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    this.props.onNavClick('detail');
+  }
 
   renderList() {
     return this.props.projects.map((project) => {
@@ -22,7 +31,24 @@ class ProjectsTeaserList extends Component {
             <span className="projects__list--teaser__project__text-container">
               <p className="projects__list--teaser__project__description">{project.shortDescription} (Project role: {project.role})</p>
             </span>
+            {/* <span className="project__palette">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span> */}
           </div>
+
+          {/* {project.image.src}
+            <ImagePalette image={project.image.src}>
+              {({ backgroundColor, color, alternativeColor }) => (
+                <div style={{ backgroundColor, color }}>
+                  This div has been themed based on
+                  <span style={{ color: alternativeColor }}>{project.image}</span>
+                </div>
+              )}
+            </ImagePalette> */}
         </li>
       );
     });
@@ -31,19 +57,15 @@ class ProjectsTeaserList extends Component {
   render() {
     return (
       <section className="portfolio__projects--teaser">
-        <div className="portfolio__projects--teaser--wrapper">
-          Projects Teaser List.
-          <h3>Projects</h3>
-          <ul className="portfolio__projects__list--teaser">
-            {this.renderList()}
-          </ul>
-        </div>
+        <ul className="portfolio__projects__list--teaser">
+          {this.renderList()}
+        </ul>
       </section>
     )
   }
 }
 
-function mapStateToProps(state) {
+function mapStateToProps(state) {  
   return {
     projects: state.projects
   };
