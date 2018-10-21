@@ -9,8 +9,7 @@ class ProjectsList extends Component {
     return this.props.projects.map((project) => {
       const path = `/project/${project.id}`;
       return (
-        <li className="portfolio__projects__list__project"
-            key={project.title}>
+        <li key={project.title}>
           <Link to={path}>{project.title}</Link>
         </li>
       );
@@ -18,15 +17,9 @@ class ProjectsList extends Component {
   }
 
   render() {
-    var classNames = require('classnames');
-
-    var listClass = classNames({
-      'is-expanded': this.props.selected,
-    });
-
     return (
-      <aside className={"portfolio__projects" + " " + listClass}>
-        <ul className="portfolio__projects__list">
+      <aside className="portfolio__project-detail__projects-list">
+        <ul>
           <lh>Projects</lh>
           {this.renderList()}
         </ul>
