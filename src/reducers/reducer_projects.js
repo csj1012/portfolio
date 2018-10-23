@@ -15,6 +15,7 @@ export default function() {
         src: 'teaser-ama-topics.png',
         alt: 'Image alt.'
       },
+      description: "We used [Layout Builder] to provide an interface where editors can drag and drop custom blocks from a CMS-controlled list of block types. Need to add a Promo Block? Just drag it into place and customize it with text. We were pleased to be able to make the content team’s editing experience a little easier (a much welcomed improvement over the tedium and confusion of the previous Drupal 7 interface). Since Layout Builder was still in the early stages of its development as a contributed module for D8, we had to overcome some hurdles while implementing the scaffolding for the layout.",
       techs: [
         'Drupal 8',
         'PatternLab',
@@ -28,11 +29,11 @@ export default function() {
       links: [
         {
           href: 'https://www.ama-assn.org/topic/advocating-patients-and-physicians',
-          text: 'View live site example'
+          text: 'View a live site example'
         },
         {
           href: 'https://www.drupal.org/case-study/american-medical-association-topics-pages',
-          text: 'View Drupal.org case study by Avi Schwab'
+          text: 'Read the Drupal.org case study by Avi Schwab'
         },
         {
           href: 'https://www.midcamp.org/topic/american-medical-association-topic-landing-pages-d8-case-study',
@@ -66,6 +67,7 @@ export default function() {
       caption: 'Test caption two.'
     },
     {
+      id: 'university-of-chicago-news',
       organization: 'The University of Chicago',
       department: 'Web Services',
       shortDescription: 'D6 to D7 migration project encompassing a total website redesign and major content reorganization',
@@ -104,6 +106,7 @@ export default function() {
       credits: 'University of Chicago Web Services (link)',
     },
     {
+      id: 'university-of-chicago-masters-arts-social-sciences',
       organization: 'The University of Chicago',
       title: 'UChicago MAPSS',
       year: '2016',
@@ -122,19 +125,7 @@ export default function() {
       },
     },
     {
-      title: 'Research Computing Center',
-      year: '2016',
-      image: {
-        src: 'horizon.png',
-        alt: 'Image alt.',
-        caption: 'Test caption one.'
-      },
-      view: 'https://rcc.uchicago.edu',
-      shortDescription: '...',
-      caption: 'Test caption four.',
-      organization: 'The University of Chicago'
-    },
-    {
+      id: 'university-of-chicago-it-services',
       year: '2015',
       title: 'UChicago IT Services',
       image: {
@@ -147,20 +138,7 @@ export default function() {
       organization: 'The University of Chicago'
     },
     {
-      year: '2015',
-      organization: 'The University of Chicago',
-      title: 'UChicago Sites',
-      shortDescription: 'Multisite Drupal suite used to house websites for over 400 University organizations',
-      image: {
-        src: 'uc-sites.png',
-        alt: 'Image alt.',
-        caption: 'Test caption one.'
-      },
-      view: 'https://sites.uchicago.edu',
-      caption: 'Test caption four.',
-      credits: 'University of Chicago Web Services (link)',
-    },
-    {
+      id: 'belleayre-music-festival',
       year: '2016',
       title: 'Belleayre Music Festival',
       image: {
@@ -174,6 +152,7 @@ export default function() {
       organization: 'Freelance Project'
     },
     {
+      id: 'horizon-rpg',
       year: '2013',
       title: 'Horizon RPG',
       image: {
