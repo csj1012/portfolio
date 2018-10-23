@@ -38,4 +38,6 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ selectProject: selectProject }, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ProjectsList);
+export default connect(mapStateToProps, mapDispatchToProps, null, {
+  pure: false
+})(ProjectsList);

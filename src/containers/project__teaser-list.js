@@ -13,6 +13,7 @@ class ProjectTeaserList extends Component {
             <p className="portfolio__project-teaser-list__project__organization">{project.organization} ({project.year})</p>
           <div className="portfolio__project-teaser-list__project__image-wrapper">
             {project.teaser && <img src={project.teaser.src} className="portfolio__project-teaser-list__project__image"/>}
+            <span class="portfolio__project-teaser-list__project__view-button">View Project</span>
           </div>
           <div className="portfolio__project-teaser-list__project__text">
             <span className="portfolio__project-teaser-list__project__text-container">
