@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { selectProject } from '../actions';
 import { bindActionCreators } from 'redux';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class ProjectsList extends Component {
   renderList() {
@@ -10,7 +10,7 @@ class ProjectsList extends Component {
       const path = `/project/${project.id}`;
       return (
         <li key={project.title}>
-          <Link to={path}>{project.title}</Link>
+          <NavLink to={path} activeClassName="project--active">{project.title}</NavLink>
         </li>
       );
     });
@@ -20,7 +20,6 @@ class ProjectsList extends Component {
     return (
       <aside className="portfolio__project-detail__projects-list">
         <ul>
-          <lh>Projects</lh>
           {this.renderList()}
         </ul>
       </aside>

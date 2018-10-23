@@ -13,8 +13,8 @@ class ProjectDetail extends Component {
   }
 
   return (
-    <div>
-      <img src={projectData.image.src} alt={projectData.image.alt} />
+    <div className="portfolio__project-detail__detail__image">
+      <img src={"/" + projectData.image.src} alt={projectData.image.alt} />
       <span className="portfolio__project-detail__detail__image__caption">
         {projectData.image.caption}
         <em>({projectData.organization})</em>
@@ -58,7 +58,7 @@ renderProjectLinks(projectData) {
       <section className="portfolio__project-detail">
         <ProjectsList />
         <div className="portfolio__project-detail__detail">
-          <h3>{projectData.title}</h3>
+          <h3>{projectData.title} ({projectData.year})</h3>
           <p className="portfolio__project-detail__detail__blurb">{projectData.shortDescription}</p>
           <p className="portfolio__project-detail__detail__techs">
             {projectData.techs &&
@@ -74,9 +74,7 @@ renderProjectLinks(projectData) {
             </ul>
           }
 
-          <a className="portfolio__project-detail__detail__image" href={projectData.view}>
             {this.renderProjectImage(projectData)}
-          </a>
 
             <p>{projectData.description}</p>
 
