@@ -22,7 +22,7 @@ const store = createStore(reducers);
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
 
       <div className="portfolio__wrapper">
         <Header />
@@ -32,6 +32,7 @@ ReactDOM.render(
         <Route path="/work" component={ProjectTeaserList} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
+        <Route path={`/`}/>
       </div>
     </BrowserRouter>
   </Provider>
