@@ -10,7 +10,7 @@ export default class About extends Component {
           <p>I'm lucky to have worked with some fantastic people. Projects that I've been part of have been featured in Drupal.org case studies and Midcamp talks.</p>
           <p>I danced ballet growing up and returned to the art as an adult. I enjoy staging, choreographing, and teaching (particularly beginner ballet!)</p>
           <p>Knitting is a new hobby for me! It's basically guaranteed that any moment my hands are idle, they are holding a pair of knitting needles.</p>
-          <p>Maurice is five years old. He knows a few tricks (sit and shake!), loves to play fetch, and is a serious cuddle monster.</p>
+          <p>I have a pet cat, Maurice. Maurice is five years old. He knows a few tricks (sit and shake!), loves to play fetch, and is a serious cuddle monster.</p>
         </section>
       );
     }

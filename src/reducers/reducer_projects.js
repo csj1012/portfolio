@@ -15,7 +15,7 @@ export default function() {
         src: 'teaser-ama-topics.png',
         alt: 'Image alt.'
       },
-      description: "We used [Panelizer] and [Panels In Place Editor] contrib modules (and later, [Layout Builder] in a newer version of the theme) to provide an interface where editors can drag and drop custom blocks from a CMS-controlled list of block types. Need to add a Promo Block? Just drag it into place and customize it with text. We were pleased to be able to make the content team’s editing experience a little easier (a much welcomed improvement over the tedium and confusion of the previous Drupal 7 interface). ",
+      description: "We used the Panelizer and Panels In Place Editor contrib modules (and later, Layout Builder in a newer version of the theme) to provide an interface where editors can drag and drop custom blocks from a CMS-controlled list of block types. Need to add a Promo Block? Just drag it into place and customize it with text. We were pleased to be able to make the content team’s editing experience a little easier (a much welcomed improvement over the tedium and confusion of the previous Drupal 7 interface). ",
       techs: [
         'Drupal 8',
         'Layout Builder (current)',
