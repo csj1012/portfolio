@@ -5,7 +5,6 @@ export default class About extends Component {
   render() {
       return (
         <section className="portfolio__about">
-          <p>I have a bunch of skills.</p>
           <p>I created my first website in 2001 when I was 11 years old. It was a Pokémon RPG. I used the tools available to me (MS Paint and the ability to google "HTML Tables") and the rest was history!</p>
           <p>While I'm comfortable working on my own, I also love teaching and contributing alongside teammates.</p>
           <p>I'm lucky to have worked with some fantastic people. Projects that I've been part of have been featured in Drupal.org case studies and Midcamp talks.</p>

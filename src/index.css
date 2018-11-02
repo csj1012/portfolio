@@ -15,9 +15,13 @@ a {
 }
 
 /**** GRID ****/
+.portfolio__wrapper {
+  margin: 0 2em;
+}
 
 @media screen and (min-width: 670px) {
   .portfolio__wrapper {
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto;
@@ -82,35 +86,52 @@ a {
 /**** NAV ****/
 
 .portfolio__nav ul {
-  list-style-type: none;
   width: 100%;
-  margin: 0 auto;
   padding: 0;
-  margin-left: -1em;
 }
 
 .portfolio__nav li {
-    display: inline-block;
-    margin-left: 3em;
+  list-style-type: none;
 }
 
 .portfolio__nav li a {
   font-size: 1.2em;
   background: transparent;
   color: #529c3d;
-  padding: 1em;
-  border-radius: 1px;
-}
-
-.portfolio__nav li a:hover {
-    background: #529c3d;
-    cursor: pointer;
-    color: white;
 }
 
 .portfolio__nav li a.nav--active {
   text-decoration: underline;
   text-underline-position: under;
+}
+
+@media screen and (min-width: 670px) {
+  .portfolio__nav ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    margin-left: -1em;
+  }
+
+  .portfolio__nav li {
+    display: inline-block;
+    margin-left: 3em;
+  }
+
+  .portfolio__nav li a {
+    font-size: 1.2em;
+    background: transparent;
+    color: #529c3d;
+    padding: 1em;
+    border-radius: 1px;
+  }
+
+  .portfolio__nav li a:hover {
+      background: #529c3d;
+      cursor: pointer;
+      color: white;
+  }
 }
 
 .portfolio__nav li:first-child {
@@ -124,7 +145,13 @@ a {
   color: #1c1b1d;
   font-family: serif;
   font-style: italic;
-  margin-top: 0;
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 670px) {
+  .portfolio__intro__blurb {
+    margin-top: 0;
+  }
 }
 
 .portfolio__intro__photo {
