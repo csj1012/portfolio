@@ -15,9 +15,11 @@ export default function() {
         src: 'teaser-ama-topics.png',
         alt: 'Image alt.'
       },
-      description: "We used [Layout Builder] to provide an interface where editors can drag and drop custom blocks from a CMS-controlled list of block types. Need to add a Promo Block? Just drag it into place and customize it with text. We were pleased to be able to make the content team’s editing experience a little easier (a much welcomed improvement over the tedium and confusion of the previous Drupal 7 interface). Since Layout Builder was still in the early stages of its development as a contributed module for D8, we had to overcome some hurdles while implementing the scaffolding for the layout.",
+      description: "We used [Panelizer] and [Panels In Place Editor] contrib modules (and later, [Layout Builder] in a newer version of the theme) to provide an interface where editors can drag and drop custom blocks from a CMS-controlled list of block types. Need to add a Promo Block? Just drag it into place and customize it with text. We were pleased to be able to make the content team’s editing experience a little easier (a much welcomed improvement over the tedium and confusion of the previous Drupal 7 interface). ",
       techs: [
         'Drupal 8',
+        'Layout Builder (current)',
+        'Panels IPE + Panelizer (previously)',
         'PatternLab',
         'Twig',
         'SCSS',
@@ -53,18 +55,25 @@ export default function() {
         'Gulp',
         'Atomic design'
       ],
+      view: 'https://americanmedicalassociation.github.io/AMA-style-guide/',
+      links: [
+        {
+          href: 'https://americanmedicalassociation.github.io/AMA-style-guide/',
+          text: 'View the PatternLab instance on Github Pages'
+        }
+      ],
       year: '2018',
       role: 'Project Lead (v1), Front end development, design systems thinking',
       image: {
         src: 'ama-styleguides.png',
         alt: 'Image alt.',
-        caption: 'Test caption one.'
+        caption: 'The pattern library showcases reusable variants of design components. '
       },
       teaser: {
         src: 'teaser-ama-styleguide.png',
         alt: 'Image alt.'
       },
-      caption: 'Test caption two.'
+      caption: 'The pattern library showcases reusable variants of design components.'
     },
     {
       id: 'university-of-chicago-news',
@@ -76,7 +85,7 @@ export default function() {
       image: {
         src: 'uc-news.png',
         alt: 'Image alt.',
-        caption: 'Test caption one.'
+        caption: 'The UChicago News home page. '
       },
       teaser: {
         src: 'teaser-uc-news.png',
@@ -90,7 +99,7 @@ export default function() {
         'Javascript/JQuery'
       ],
 
-      role: 'Design Lead, design, front end development',
+      role: 'Design Lead, design, front end development, drupal/module development',
       view: 'https://web.archive.org/web/20160603004748/https://news.uchicago.edu/',
       links: [
         {
@@ -99,10 +108,9 @@ export default function() {
         },
         {
           href: 'https://www.drupal.org/case-study/uchicago-news',
-          text: 'Drupal.org case study about this project'
+          text: 'Read the Drupal.org case study about this project'
         }
       ],
-      caption: 'Test caption three.',
       credits: 'University of Chicago Web Services (link)',
     },
     {
@@ -110,12 +118,25 @@ export default function() {
       organization: 'The University of Chicago',
       title: 'UChicago MAPSS',
       year: '2016',
+      techs: [
+        'Drupal 7',
+        'HTML',
+        'CSS/SCSS',
+        'PHP',
+        'Javascript/JQuery'
+      ],
       shortDescription: 'Customizable and themable Drupal boilerplate site for the UChicago Master of Arts Program in the Social Sciences',
       view: 'https://mapss.uchicago.edu/',
+      links: [
+        {
+          href: 'https://mapss.uchicago.edu/',
+          text: 'View live site example'
+        }
+      ],
+      role: 'Front end development, Drupal/module development',
       image: {
         src: 'uc-mapss.png',
         alt: 'Image alt.',
-        caption: 'Test caption one.'
       },
       caption: 'Test caption four.',
       credits: 'University of Chicago Web Services (link)',
@@ -128,42 +149,52 @@ export default function() {
       id: 'university-of-chicago-it-services',
       year: '2015',
       title: 'UChicago IT Services',
+      role: 'Design Lead, Design, Front end development, Drupal development',
+      techs: [
+        'Drupal 7',
+        'HTML',
+        'CSS/SCSS',
+        'PHP',
+        'Javascript/JQuery'
+      ],
       image: {
-        src: 'horizon.png',
+        src: 'uc-itservices.png',
         alt: 'Image alt.',
-        caption: 'Test caption one.'
+        caption: 'The IT Services home page.'
       },
       shortDescription: '',
+      view: 'https://web.archive.org/web/20150907233545/https://itservices.uchicago.edu/',
+      links: [
+        {
+          href: 'https://web.archive.org/web/20150907233545/https://itservices.uchicago.edu/',
+          text: 'View this project on the Internet Archive'
+        }
+      ],
       caption: 'Test caption four.',
-      organization: 'The University of Chicago'
-    },
-    {
-      id: 'belleayre-music-festival',
-      year: '2016',
-      title: 'Belleayre Music Festival',
-      image: {
-        src: 'horizon.png',
-        alt: 'Image alt.',
-        caption: 'Test caption one.'
-      },
-      view: 'http://horizon.taiyae.com',
-      shortDescription: '...',
-      caption: 'Test caption four.',
-      organization: 'Freelance Project'
+      organization: 'The University of Chicago',
+      teaser: {
+        src: 'teaser-uc-itservices.png',
+        alt: 'Alt text.'
+      }
     },
     {
       id: 'horizon-rpg',
       year: '2013',
       title: 'Horizon RPG',
+      role: 'Creator, Administrator (previously), Design, Custom ExpressionEngine module development',
       image: {
         src: 'horizon.png',
-        alt: 'Image alt.',
-        caption: 'Test caption one.'
+        alt: 'A screenshot of the Horizon home page.',
+        caption: 'The Horizon home page. '
       },
       view: 'http://horizon.taiyae.com',
       shortDescription: 'Homebrew role-playing game built using ExpressionEngine, custom PHP modules, and lots of love',
       caption: 'Test caption four.',
-      organization: 'Personal Project'
+      organization: 'Personal Project',
+      teaser: {
+        src: 'teaser-horizon-rpg.png',
+        alt: 'Alt text.'
+      }
     },
   ]
 }

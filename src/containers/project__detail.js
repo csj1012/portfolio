@@ -60,6 +60,7 @@ renderProjectLinks(projectData) {
         <div className="portfolio__project-detail__detail">
           <h3>{projectData.title} ({projectData.year})</h3>
           <p className="portfolio__project-detail__detail__blurb">{projectData.shortDescription}</p>
+          <p className="portfolio__project-detail__detail__blurb"><strong>Project role:</strong> {projectData.role}</p>
           <p className="portfolio__project-detail__detail__techs">
             {projectData.techs &&
               <ul>
