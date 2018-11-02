@@ -6,10 +6,9 @@ export default class Contact extends Component {
       return (
         <section className="portfolio__contact">
           <ul>
-            <li>Email: chelsiesjohnston@gmail.com</li>
-            <li>Github: /chelsiejohnston</li>
-            <li>Twitter: @aimless_muse</li>
-            <li>Linkedin: /chelsiesjohnston</li>
+            <li>Email: <a mailto="chelsiesjohnston@gmail.com">chelsiesjohnston@gmail.com</a></li>
+            <li>Github: <a href="https://github.com/csj1012">csj1012</a></li>
+            <li>Linkedin: <a href="https://www.linkedin.com/in/chelsiesjohnston/">chelsiesjohnston</a></li>
           </ul>
 
 
