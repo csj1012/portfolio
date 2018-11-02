@@ -14,7 +14,7 @@ class ProjectDetail extends Component {
 
   return (
     <div className="portfolio__project-detail__detail__image">
-      <img src={"/" + projectData.image.src} alt={projectData.image.alt} />
+      <img src={"/portfolio/" + projectData.image.src} alt={projectData.image.alt} />
       <span className="portfolio__project-detail__detail__image__caption">
         {projectData.image.caption}
         <em>({projectData.organization})</em>
