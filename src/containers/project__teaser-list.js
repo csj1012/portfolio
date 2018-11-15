@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/black-and-white.css';
 
 class ProjectTeaserList extends Component {
   renderList() {
@@ -12,7 +14,8 @@ class ProjectTeaserList extends Component {
             <h2 className="portfolio__project-teaser-list__project__title">{project.title}</h2>
             <p className="portfolio__project-teaser-list__project__organization">{project.organization} ({project.year})</p>
           <div className="portfolio__project-teaser-list__project__image-wrapper">
-            {project.teaser && <img src={project.teaser.src} className="portfolio__project-teaser-list__project__image"/>}
+            {project.teaser &&
+              <LazyLoadImage src={project.teaser.src} effect="black-and-white" alt={project.teaser.alt} className="portfolio__project-teaser-list__project__image"/>}
             <span class="portfolio__project-teaser-list__project__view-button">View Project</span>
           </div>
           <div className="portfolio__project-teaser-list__project__text">

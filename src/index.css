@@ -158,6 +158,7 @@ a {
   width: 11.4em;
   height: 11.4em;
   overflow: hidden;
+  margin-right: 1.5em;
 }
 
 .portfolio__intro__photo img {
