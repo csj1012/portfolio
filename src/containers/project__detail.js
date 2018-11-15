@@ -77,7 +77,7 @@ renderProjectLinks(projectData) {
 
             {this.renderProjectImage(projectData)}
 
-            <p>{projectData.description}</p>
+            <p className="portfolio__project-detail__detail__description">{projectData.description}</p>
 
         </div>
       </section>

@@ -92,13 +92,16 @@ export default function() {
         alt: 'The UChicago News home page.'
       },
       techs: [
+        'Rapid prototyping',
+        'Adobe Photoshop',
+        'Style Tiles',
         'Drupal',
         'HTML',
         'CSS/SCSS',
         'PHP',
         'Javascript/JQuery'
       ],
-
+      description: 'Our main design goal was to give the site a sleek, responsive look that allowed the client to feature big stories in a captivating way. \n\nThis design phase spanned two months. I worked closely (usually hands-on in Photoshop) with the client over a series of eight weekly meetings. Meeting with the clients one-on-one was at times exhausting for both parties, but we made tangible progress quickly. We could answer questions and test drive ideas easily in person, avoiding email back-and-forth that might take days otherwise. In meetings, we focused on solidifying the basic layout first, and then built up the brand\'s look and feel (working in conjunction with the University’s existing brand guidelines). We did this by beginning with low-fi, grayscale mockups to represent layout and Style Tiles to represent look and feel, and worked our way up to detailed, colorful comps. \n\nThe main design challenge we faced was that we needed to display various permutations of node data on story pages. The layout of the page needed to remain highly flexible (being built in Drupal) while being editor-friendly. A news article could be as simple as a few paragraphs, or as complex as a main feature story with interactive embeds and a full-screen cover image. Thanks to our iterative approach to the design process, we were able to start with the simplest version first, and then expand it based on potential need. The resulting flexibility in layout gave the client a wide array of visual tactics for illustrating their stories.',
       role: 'Design Lead, design, front end development, drupal/module development',
       view: 'https://web.archive.org/web/20160603004748/https://news.uchicago.edu/',
       links: [
