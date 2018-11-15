@@ -7,15 +7,15 @@ export default class About extends Component {
         <section className="portfolio__about">
           <div className="portfolio__about__images">
             <div className="portfolio__about__image__image-wrapper">
-              <img src="/ballet.jpg" />
-              <span>Performing <em>Six Princesses (Pas de Six)</em> in Swan Lake, University Ballet of Chicago.</span>
-            </div>
-            <div className="portfolio__about__image__image-wrapper">
-              <img src="/knitting.jpg" />
+              <img src="/portfolio/knitting.jpg" />
               <span>A mini holiday stocking recently knitted by me (it's SO tiny and adorable!).</span>
             </div>
             <div className="portfolio__about__image__image-wrapper">
-              <img src="/maurice.jpg" />
+              <img src="/portfolio/ballet.jpg" />
+              <span>Performing <em>Six Princesses (Pas de Six)</em> in Swan Lake, University Ballet of Chicago.</span>
+            </div>
+            <div className="portfolio__about__image__image-wrapper">
+              <img src="/portfolio/maurice.jpg" />
               <span>This is Maurice. He took this photo himself.</span>
             </div>
           </div>
