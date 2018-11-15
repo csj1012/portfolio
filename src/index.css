@@ -433,3 +433,45 @@ section.portfolio__resume h5 {
   display: block;
   font-weight: 600;
 }
+
+/*** ABOUT ***/
+.portfolio__about {
+  display: grid;
+  grid-template-rows: 2fr;
+}
+
+@media screen and (min-width: 670px) {
+  .portfolio__about {
+    grid-template-columns: 14em 1fr;
+    grid-column-gap: 1em;
+    grid-template-rows: 1fr;
+  }
+}
+
+.portfolio__about__text {
+  grid-row: 1;
+}
+
+@media screen and (min-width: 670px) {
+  .portfolio__about__text {
+    grid-column: 2;
+  }
+}
+
+.portfolio__about__image__image-wrapper {
+  margin-bottom: 2em;
+  background: white;
+  padding: 1em;
+}
+
+.portfolio__about__images img {
+  max-width: 100%;
+}
+
+.portfolio__about__images span {
+  font-size: .7em;
+  line-height: 1.2em;
+  margin-top: .5em;
+  display: block;
+  color: #666;
+}
