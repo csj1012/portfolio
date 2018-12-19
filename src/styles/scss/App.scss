@@ -1,0 +1,102 @@
+@import '~sanitize.css';
+
+/*** COLORS ***/
+$brown: #4E4E4E;
+$green: #1F8B71;
+$gray-medium: #7C7C7C;
+$gray-dark: #4E4E4E;
+
+/*** TYPOGRAPHY ***/
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600');
+
+$font-weight-thin: 300;
+$font-weight-book: 400;
+$font-weight-semibold: 500;
+
+$font-size-1: 18px;
+$font-size-2: 25px;
+$font-size-3: 39px;
+
+$base-font-weight: $font-weight-thin;
+$base-font-size: $font-size-1;
+$base-letter-spacing: -1.3px;
+
+/*** SPACING ***/
+
+@mixin left-right-margins() {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+@mixin comfortable-leading() {
+  padding-right: 1em;
+}
+
+/*****/
+
+body {
+  color: $brown;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  letter-spacing: $base-letter-spacing;
+  letter-spacing: -1.2px;
+  transform: scale(1, 0.96);
+  line-height: 1.358;
+}
+
+a {
+  color: $green;
+  text-decoration: none;
+}
+
+.portfolio__header {
+  @include left-right-margins();
+
+  h1 {
+    font-size: $font-size-2;
+    color: $gray-medium;
+    font-weight: $font-weight-thin;
+  }
+}
+
+.portfolio__intro__blurb {
+  @include left-right-margins();
+  @include comfortable-leading();
+
+  font-size: $font-size-3;
+}
+
+.portfolio__nav {
+  font-size: $font-size-2;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-top: 0.1em;
+  }
+
+  a {
+    color: $gray-medium;
+    @include left-right-margins();
+
+    &.nav--active {
+      color: $gray-dark;
+      background: white;
+
+      &:after {
+        width: 100vw;
+        content: " ";
+        display: block;
+        height: 1px;
+        background: #1F8B71;
+        margin-top: -.65em;
+        margin-left: 1em;
+        border: solid 1px #1F8B71;
+      }
+    }
+  }
+}

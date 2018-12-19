@@ -1,0 +1,70 @@
+@import '~sanitize.css';
+/*** COLORS ***/
+/*** TYPOGRAPHY ***/
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600");
+/*** SPACING ***/
+/*****/
+body {
+  color: #4E4E4E;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: -1.3px;
+  letter-spacing: -1.2px;
+  transform: scale(1, 0.96);
+  line-height: 1.358;
+}
+
+a {
+  color: #1F8B71;
+  text-decoration: none;
+}
+
+.portfolio__header {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.portfolio__header h1 {
+  font-size: 25px;
+  color: #7C7C7C;
+  font-weight: 300;
+}
+
+.portfolio__intro__blurb {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-right: 1em;
+  font-size: 39px;
+}
+
+.portfolio__nav {
+  font-size: 25px;
+}
+.portfolio__nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.portfolio__nav li {
+  margin-top: 0.1em;
+}
+.portfolio__nav a {
+  color: #7C7C7C;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.portfolio__nav a.nav--active {
+  color: #4E4E4E;
+  background: white;
+}
+.portfolio__nav a.nav--active:after {
+  width: 100vw;
+  content: " ";
+  display: block;
+  height: 1px;
+  background: #1F8B71;
+  margin-top: -0.65em;
+  margin-left: 1em;
+  border: solid 1px #1F8B71;
+}
+
+/*# sourceMappingURL=App.css.map */
