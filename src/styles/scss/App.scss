@@ -13,13 +13,16 @@ $font-weight-thin: 300;
 $font-weight-book: 400;
 $font-weight-semibold: 500;
 
+$font-size-small: 13px;
+$font-size-0: 16px;
 $font-size-1: 18px;
-$font-size-2: 25px;
-$font-size-3: 39px;
+$font-size-2: 22px;
+$font-size-3: 25px;
+$font-size-4: 39px;
 
 $base-font-weight: $font-weight-thin;
-$base-font-size: $font-size-1;
-$base-letter-spacing: -1.3px;
+$base-font-size: $font-size-2;
+$base-letter-spacing: -1.2px;
 
 /*** SPACING ***/
 
@@ -40,7 +43,6 @@ body {
   font-size: $base-font-size;
   font-weight: $base-font-weight;
   letter-spacing: $base-letter-spacing;
-  letter-spacing: -1.2px;
   transform: scale(1, 0.96);
   line-height: 1.358;
 }
@@ -54,7 +56,7 @@ a {
   @include left-right-margins();
 
   h1 {
-    font-size: $font-size-2;
+    font-size: $font-size-3;
     color: $gray-medium;
     font-weight: $font-weight-thin;
   }
@@ -64,11 +66,11 @@ a {
   @include left-right-margins();
   @include comfortable-leading();
 
-  font-size: $font-size-3;
+  font-size: $font-size-4;
 }
 
 .portfolio__nav {
-  font-size: $font-size-2;
+  font-size: $font-size-3;
 
   ul {
     list-style-type: none;
@@ -99,4 +101,30 @@ a {
       }
     }
   }
+}
+
+section.portfolio__about {
+  @include left-right-margins();
+  @include comfortable-leading();
+  letter-spacing: 0;
+  font-size: 1.04em;
+  line-height: 1.425em;
+}
+
+.call-out {
+  background: rgba($green, .11);
+  font-size: $font-size-0;
+  padding: 1em;
+  display: block;
+  margin: 1.5em 0;
+}
+
+.portfolio__about__image {
+  &__caption {
+    font-size: $font-size-small;
+  }
+}
+
+img {
+  max-width: 100%;
 }
