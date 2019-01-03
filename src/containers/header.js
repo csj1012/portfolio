@@ -1,21 +1,16 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-export class Header extends Component {
-  render() {
-    return (
-      <section className="portfolio__header">
-        <Link to="/work"><h1>Chelsie Johnston</h1></Link>
-      </section>
-    );
-  };
-}
+const Header = ({ children }) => (
+  <header className="page-header">
+    <nav>
+      <ul>
+        <li><NavLink to="/" exact>Home</NavLink></li>
+        <li><NavLink to="/about">About</NavLink></li>
+        <li><NavLink to="/contact" exact>Contact</NavLink></li>
+      </ul>
+    </nav>
+  </header>
+)
 
-function mapStateToProps(state) {
-  return {
-    selected: state.selected
-  };
-}
-
-export default connect(mapStateToProps)(Header);
+export default Header

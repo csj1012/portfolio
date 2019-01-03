@@ -1,10 +1,10 @@
 import React from 'react'
 import { NavLink, Switch, Route } from 'react-router-dom'
 
-const About = ({ match }) => (
+const Home = ({ match }) => (
   <section>
-    About
+    Home
   </section>
 )
 
-export default About
+export default Home
