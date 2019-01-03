@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/black-and-white.css';
+import Soapbox from './soapbox';
 
 class ProjectTeaserList extends Component {
   renderList() {
@@ -34,6 +35,10 @@ class ProjectTeaserList extends Component {
       <aside className="portfolio__project-teaser-list">
         <ul>
           {this.renderList()}
+          <li className="portfolio__project-teaser-list__soapbox">
+            <Soapbox />
+          </li>
+          <li>Resume download button</li>
         </ul>
       </aside>
     );
