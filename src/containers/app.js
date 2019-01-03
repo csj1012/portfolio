@@ -8,7 +8,7 @@ import Contact from './contact'
 
 const App = ({ location }) => {
   const currentKey = location.pathname.split('/')[1] || '/'
-  const timeout = { enter: 300, exit: 200 }
+  const timeout = { enter: 300, exit: 300 }
 
   return (
   	<Layout>
