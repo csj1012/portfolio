@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { selectProject } from '../actions';
 import { bindActionCreators } from 'redux';
 import { NavLink } from 'react-router-dom';
+import Soapbox from './soapbox';
 
 class ProjectsList extends Component {
   renderList() {
@@ -21,7 +22,7 @@ class ProjectsList extends Component {
       <aside className="portfolio__project-detail__projects-list">
         <ul>
           {this.renderList()}
-        </ul>
+        </ul>        
       </aside>
     )
   }

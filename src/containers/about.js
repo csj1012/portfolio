@@ -1,10 +1,24 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+import { CSSTransition } from 'react-transition-group';
 
-export default class About extends Component {
-  render() {
+
+
+class About extends Component {
+  render(props) {
+
+    const getClassname = () => {
+      const pathname = this.props.location.pathname;
+      var section = pathname.replace('/','');
+
+      return "portfolio__about " + section;
+     }
+
       return (
-        <section className="portfolio__about">
+        <CSSTransition
+        // <section className="portfolio__about">
+        <section className={getClassname()}>
         <span className="portfolio__about__image">
           <img src="chelsie.jpg" alt="An image of Chelsie." />
           <span className="portfolio__about__image__caption">
@@ -20,3 +34,5 @@ export default class About extends Component {
       );
     }
   };
+
+export default withRouter(About);
