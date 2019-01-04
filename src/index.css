@@ -479,3 +479,10 @@ section.portfolio__resume h5 {
   display: block;
   color: #666;
 }
+
+.portfolio__about__text__soapbox {
+  font-size: 0.7em;
+  color: #181b18;
+  background: #d9e3da36;
+  padding: 1em 4em 1em 1em;
+}
