@@ -62,6 +62,8 @@ a {
   .portfolio__contact {
     grid-row: 4;
     grid-column: 2 / 6;
+    font-size: 1.2em;
+    font-weight: 300;
   }
 
   .portfolio__project-detail {
@@ -306,6 +308,8 @@ h4:after {
 .portfolio__project-detail__detail {
   background: white;
   padding: 1em;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 .portfolio__project-detail__detail h3 {
@@ -448,6 +452,8 @@ section.portfolio__resume h5 {
 
 .portfolio__about__text {
   grid-row: 1;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 670px) {
