@@ -83,6 +83,8 @@ $base-letter-spacing: -1.2px;
 
 /*****/
 
+#app, body, html { height: 100%; }
+
 body {
   color: $brown;
   font-family: 'Nunito Sans', sans-serif;
@@ -132,17 +134,15 @@ a {
   @include comfortable-leading();
 
   font-size: $font-size-4;
+
+  @include breakpoint(sm) {
+    margin-top: 0;
+  }
 }
 
 .portfolio__nav {
+  @include left-right-margins();
   font-size: $font-size-3;
-  grid-row: 3;
-  grid-column: 1;
-
-  @include breakpoint(sm) {
-    grid-row: 3;
-    grid-column: 1;
-  }
 
   ul {
     list-style-type: none;
@@ -155,21 +155,16 @@ a {
 
   a {
     color: $gray-medium;
-    @include left-right-margins();
 
     &.nav--active {
       color: $gray-dark;
       background: white;
 
       &:after {
-        width: 100vw;
         content: " ";
         display: block;
         height: 1px;
         background: #1F8B71;
-        margin-top: -.65em;
-        margin-left: 1em;
-        border: solid 1px #1F8B71;
       }
     }
   }
@@ -195,10 +190,7 @@ a {
   opacity: 0;
 }
 
-.portfolio__about,
-.portfolio__project-teaser-list,
-.portfolio__contact,
-.portfolio__project-detail {
+.portfolio__section-wrapper, {
   grid-row: 4;
   grid-column: 1;
   // transition: opacity .5s ease;
@@ -243,4 +235,11 @@ a {
 
 img {
   max-width: 100%;
+}
+
+.portfolio__project-teaser-list ul {
+  @include left-right-margins();
+  margin-top: 0;
+  list-style-type: none;
+  padding: 0;
 }
