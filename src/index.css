@@ -172,9 +172,8 @@ a {
 .portfolio__intro__blurb {
   font-size: 1.5em;
   color: #1c1b1d;
-  font-family: serif;
-  font-style: italic;
   margin-top: 1em;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 670px) {
@@ -298,8 +297,7 @@ h4:after {
 
 .portfolio__project-teaser-list__project__description {
   display: inline;
-  font-family: serif;
-  font-style: italic;
+  font-weight: 300;
   font-size: 1.2em;
 }
 
