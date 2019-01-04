@@ -11,8 +11,6 @@ export default class Contact extends Component {
             <li>Linkedin: <a href="https://www.linkedin.com/in/chelsiesjohnston/">chelsiesjohnston</a></li>
           </ul>
 
-
-          <Resume />
         </section>
       );
     }

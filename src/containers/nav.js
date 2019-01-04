@@ -8,7 +8,7 @@ render() {
         <ul>
           <li><NavLink to='/work' activeClassName="nav--active">Projects</NavLink></li>
           <li><NavLink to='/about' activeClassName="nav--active">About Me</NavLink></li>
-          <li><NavLink to='/contact' activeClassName="nav--active">Résumé & Contact</NavLink></li>
+          <li><NavLink to='/contact' activeClassName="nav--active">Contact</NavLink></li>
         </ul>
       </div>
     );
